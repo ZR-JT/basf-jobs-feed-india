@@ -5,9 +5,15 @@ import aiohttp
 from playwright.async_api import async_playwright
 from datetime import datetime
 
-SEARCH_URL = "https://basf.jobs/?currentPage=1&pageSize=1000&addresses%2Fcountry=Germany"
+# ── ÄNDERUNG 1: Länderfilter in der BASF-Such-URL ───────────────────────────
+SEARCH_URL = "https://basf.jobs/?currentPage=1&pageSize=1000&addresses%2Fcountry=India"
+
 AZURE_URL = "https://searchui.search.windows.net/indexes/basf-prod/docs/search?api-version=2020-06-30"
-BASE_URL = "https://ZR-JT.github.io/basf-jobs-feed"
+
+# ── ÄNDERUNG 2: Basis-URL für GitHub Pages ──────────────────────────────────
+# Passe das Repository an, falls du einen eigenen Feed für Indien nutzt.
+# Wenn es im selben Repo liegt, einfach den Unterordner anpassen:
+BASE_URL = "https://ZR-JT.github.io/basf-jobs-feed-india"
 
 def strip_html(text):
     if not text:
@@ -58,7 +64,7 @@ async def scrape_jobs():
 
     print("✅ API Key gefunden")
 
-    PREFERRED_LOCALES = ["en_US", "de_DE", "de_AT", "de_CH"]
+    PREFERRED_LOCALES = ["en_US", "en_IN", "de_DE", "de_AT", "de_CH"]
     PAGE_SIZE = 1000
     all_raw_jobs = []
     skip = 0
@@ -67,7 +73,8 @@ async def scrape_jobs():
         while True:
             search_body = {
                 "search": "*",
-                "filter": "addresses/any(a: a/country eq 'Germany')",
+                # ── ÄNDERUNG 3: Länderfilter in der Azure-API-Abfrage ────────
+                "filter": "addresses/any(a: a/country eq 'India')",
                 "select": "*",
                 "top": PAGE_SIZE,
                 "skip": skip,
@@ -135,8 +142,8 @@ async def scrape_jobs():
         raw_desc = job.get("description") or ""
         description = strip_html(raw_desc)[:500]
 
-        city = addr.get("city") or addr.get("locationCity") or "Unbekannt"
-        state = addr.get("state") or "Unbekannt"
+        city = addr.get("city") or addr.get("locationCity") or "Unknown"
+        state = addr.get("state") or "Unknown"
 
         entry = {
             "job_id": numeric_id,
@@ -144,7 +151,7 @@ async def scrape_jobs():
             "url": job.get("link") or f"https://basf.jobs/job/{numeric_id}/",
             "city": city,
             "state": state,
-            "country": addr.get("country") or "Germany",
+            "country": addr.get("country") or "India",
             "company": job.get("legalEntity") or "BASF",
             "business_unit": job.get("businessUnit") or "",
             "department": job.get("department") or "",
@@ -174,24 +181,23 @@ async def scrape_jobs():
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"✅ jobs.json gespeichert — {len(jobs)} Jobs!")
 
-    # ── Nach Bundesland + Stadt gruppieren ──────────────────────────────────
-    regions = {}  # key: (state, city) → list of jobs
+    # ── Nach Bundesstaat + Stadt gruppieren ─────────────────────────────────
+    regions = {}
     for j in jobs:
-        state = j.get("state", "Unbekannt")
-        city = j.get("city", "Unbekannt")
+        state = j.get("state", "Unknown")
+        city = j.get("city", "Unknown")
         key = (state, city)
         if key not in regions:
             regions[key] = []
         regions[key].append(j)
 
-    # Regionen sortieren: Bundesland alphabetisch, dann Stadt alphabetisch
     sorted_regions = sorted(regions.keys(), key=lambda k: (k[0].lower(), k[1].lower()))
 
     # ── Regionsseiten generieren ─────────────────────────────────────────────
     import os
     os.makedirs("regions", exist_ok=True)
 
-    region_slugs = {}  # (state, city) → slug
+    region_slugs = {}
 
     for (state, city) in sorted_regions:
         slug = f"region-{slugify(state)}-{slugify(city)}"
@@ -208,25 +214,25 @@ async def scrape_jobs():
             rows += f"""<div class="job">
   <h2><a href="{j.get('url','')}'">{j.get('title','')}</a></h2>
   <p><strong>Link:</strong> {j.get('url','')}</p>
-  <p><strong>Unternehmen:</strong> {j.get('company','')}</p>
-  <p><strong>Bereich:</strong> {j.get('job_field','')}</p>
-  <p><strong>Abteilung:</strong> {j.get('department','')}</p>
+  <p><strong>Company:</strong> {j.get('company','')}</p>
+  <p><strong>Field:</strong> {j.get('job_field','')}</p>
+  <p><strong>Department:</strong> {j.get('department','')}</p>
   <p><strong>Level:</strong> {j.get('job_level','')}</p>
-  <p><strong>Typ:</strong> {j.get('job_type','')}</p>
-  <p><strong>Hybrid:</strong> {'Ja' if j.get('hybrid') else 'Nein'}</p>
-  <p><strong>Veröffentlicht:</strong> {j.get('date_posted','')[:10]}</p>
-  <p><strong>Beschreibung:</strong> {j.get('description','')}</p>
-  {f'<p><strong>Ansprechpartner:</strong> {recruiter_str}</p>' if recruiter_str else ''}
+  <p><strong>Type:</strong> {j.get('job_type','')}</p>
+  <p><strong>Hybrid:</strong> {'Yes' if j.get('hybrid') else 'No'}</p>
+  <p><strong>Posted:</strong> {j.get('date_posted','')[:10]}</p>
+  <p><strong>Description:</strong> {j.get('description','')}</p>
+  {f'<p><strong>Contact:</strong> {recruiter_str}</p>' if recruiter_str else ''}
 </div>
 """
 
         html = f"""<!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head><meta charset="UTF-8"><title>BASF Jobs – {city}, {state}</title></head>
 <body>
-<p><a href="{BASE_URL}/index_lite.html">← Zurück zur Übersicht</a></p>
+<p><a href="{BASE_URL}/index_lite.html">← Back to overview</a></p>
 <h1>BASF Jobs – {city}, {state}</h1>
-<p>Stand: {timestamp} | {len(region_jobs)} Stelle(n)</p>
+<p>Stand: {timestamp} | {len(region_jobs)} position(s)</p>
 {rows}
 </body>
 </html>"""
@@ -234,12 +240,9 @@ async def scrape_jobs():
         with open(f"regions/{slug}.html", "w", encoding="utf-8") as f:
             f.write(html)
 
-    print(f"✅ {len(sorted_regions)} Regionsseiten generiert!")
+    print(f"✅ {len(sorted_regions)} region pages generated!")
 
-    # ── index.html generieren (vollständig, mit allen Jobtiteln + Links) ────
-    # ÄNDERUNG: Jeder Jobeintrag enthält jetzt den direkten basf.jobs-Link.
-    # Das erlaubt dem KI-Agenten, Links direkt aus dem Index zu lesen,
-    # ohne eine separate Regionsseite abrufen zu müssen.
+    # ── index.html generieren (mit allen Jobtiteln + Links) ─────────────────
     index_rows = ""
     current_state = None
 
@@ -255,25 +258,20 @@ async def scrape_jobs():
         count = len(region_jobs)
         region_url = f"{BASE_URL}/regions/{slug}.html"
 
-        index_rows += f'<li><a href="{region_url}">{city}</a> ({count} Stelle(n))<ul>\n'
+        index_rows += f'<li><a href="{region_url}">{city}</a> ({count} position(s))<ul>\n'
         for j in region_jobs:
-            # ── GEÄNDERTE ZEILE ──────────────────────────────────────────────
-            # Vorher: <li>DATUM – TITEL</li>
-            # Jetzt:  <li>DATUM – <a href="LINK">TITEL</a></li>
-            # Der Agent kann den Link jetzt direkt aus dem Index lesen.
             index_rows += f'  <li>{j.get("date_posted","")[:10]} – <a href="{j.get("url","")}">{j.get("title","")}</a></li>\n'
-            # ────────────────────────────────────────────────────────────────
         index_rows += f'</ul></li>\n'
 
     if current_state is not None:
         index_rows += "</ul>\n"
 
     index_html = f"""<!DOCTYPE html>
-<html lang="de">
-<head><meta charset="UTF-8"><title>BASF Jobs Deutschland – Übersicht</title></head>
+<html lang="en">
+<head><meta charset="UTF-8"><title>BASF Jobs India – Overview</title></head>
 <body>
-<h1>BASF Stellenangebote Deutschland</h1>
-<p>Stand: {timestamp} | Gesamt: {len(jobs)} Stellen | {len(sorted_regions)} Standorte</p>
+<h1>BASF Job Openings India</h1>
+<p>Stand: {timestamp} | Total: {len(jobs)} positions | {len(sorted_regions)} locations</p>
 {index_rows}
 </body>
 </html>"""
@@ -281,9 +279,9 @@ async def scrape_jobs():
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(index_html)
 
-    print(f"✅ index.html gespeichert!")
+    print(f"✅ index.html saved!")
 
-    # ── index_lite.html generieren (nur Standorte + Anzahl, für den Agenten) ─
+    # ── index_lite.html generieren ───────────────────────────────────────────
     lite_rows = ""
     current_state = None
 
@@ -297,17 +295,17 @@ async def scrape_jobs():
         slug = region_slugs[(state, city)]
         count = len(regions[(state, city)])
         region_url = f"{BASE_URL}/regions/{slug}.html"
-        lite_rows += f'<li><a href="{region_url}">{city}</a> ({count} Stellen)</li>\n'
+        lite_rows += f'<li><a href="{region_url}">{city}</a> ({count} positions)</li>\n'
 
     if current_state is not None:
         lite_rows += "</ul>\n"
 
     lite_index_html = f"""<!DOCTYPE html>
-<html lang="de">
-<head><meta charset="UTF-8"><title>BASF Jobs – Standortübersicht</title></head>
+<html lang="en">
+<head><meta charset="UTF-8"><title>BASF Jobs India – Location Overview</title></head>
 <body>
-<h1>BASF Stellenangebote Deutschland</h1>
-<p>Stand: {timestamp} | Gesamt: {len(jobs)} Stellen | {len(sorted_regions)} Standorte</p>
+<h1>BASF Job Openings India</h1>
+<p>Stand: {timestamp} | Total: {len(jobs)} positions | {len(sorted_regions)} locations</p>
 {lite_rows}
 </body>
 </html>"""
@@ -315,6 +313,6 @@ async def scrape_jobs():
     with open("index_lite.html", "w", encoding="utf-8") as f:
         f.write(lite_index_html)
 
-    print(f"✅ index_lite.html gespeichert!")
+    print(f"✅ index_lite.html saved!")
 
 asyncio.run(scrape_jobs())
