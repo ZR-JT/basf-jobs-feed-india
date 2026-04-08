@@ -1,7 +1,28 @@
 {
-  "last_updated": "2026-04-08T06:01:28Z",
-  "total_active": 37,
+  "last_updated": "2026-04-08T11:17:47Z",
+  "total_active": 38,
   "jobs": [
+    {
+      "job_id": "135326",
+      "title": "Business Controller - Performance Materials, India",
+      "url": "https://basf.jobs/job-invite/135326/?locale=en_US",
+      "city": "Godrej One - Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "company": "BASF India Limited",
+      "business_unit": "Asia Pacific",
+      "department": "A-PMA/C",
+      "job_field": "Finance, Controlling & Audit",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-04-08T06:10:46Z",
+      "description": "About The Role Lead PM Controlling team in India by steering, providing guidance and inspiring the team to be valued business partners for stakeholders in India. Be responsible for overall controlling, reporting, business analysis activities and ensuring compliance in India. Represent PM interest in discussion with other functions and units in the countries Be responsible for overall PM site controlling and reporting activities in Thane, Dahej and Panoli. Ensuring site operates with clear visibi",
+      "recruiter": {
+        "name": "Sejal Sandeep Singh",
+        "email": "sejal.sandeep-singh@partners.basf.com"
+      }
+    },
     {
       "job_id": "135301",
       "title": "Research chemist",
