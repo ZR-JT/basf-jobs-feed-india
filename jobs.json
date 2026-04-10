@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-10T11:14:15Z",
-  "total_active": 40,
+  "last_updated": "2026-04-10T14:41:15Z",
+  "total_active": 39,
   "jobs": [
     {
       "job_id": "135176",
@@ -231,28 +231,6 @@
       "recruiter": {
         "name": "Sejal Sandeep Singh",
         "email": "sejal.sandeep-singh@partners.basf.com"
-      }
-    },
-    {
-      "job_id": "134065",
-      "title": "Data Science Specialist - IP (on contract)",
-      "url": "https://basf.jobs/job-invite/134065/?locale=en_US",
-      "city": "Navi Mumbai - HO (Innovation Campus)",
-      "state": "Maharashtra",
-      "country": "India",
-      "company": "BASF Chemicals India Pvt. Ltd.",
-      "business_unit": "Asia Pacific",
-      "department": "GBI/CF Center of Information Excellence",
-      "job_field": "Information Technology & Services",
-      "job_level": "Professional",
-      "job_type": "Temporary",
-      "hybrid": false,
-      "date_posted": "2026-03-05T05:12:57Z",
-      "description": "How You Will Do It Participate in the design and development of end-to-end AI and analytics full-stack solutions using relevant technologies.• Independently define solution approaches, develop required functionalities, and implement them by analyzing inputs and desired outputs. Perform data preprocessing, harmonization, and feature engineering to prepare modeling datasets. Design and develop a scalable, modular architecture for new and existing AI applications. Demonstrate hands-on experience wi",
-      "recruiter": {
-        "name": "Sumit Roy",
-        "email": "sumit.roy@basf.com",
-        "phone": "+912261637367   86781-7367"
       }
     },
     {
