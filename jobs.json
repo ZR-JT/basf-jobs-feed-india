@@ -1,7 +1,28 @@
 {
-  "last_updated": "2026-04-09T22:01:39Z",
-  "total_active": 39,
+  "last_updated": "2026-04-10T06:19:38Z",
+  "total_active": 40,
   "jobs": [
+    {
+      "job_id": "135176",
+      "title": "Executive Technical Services 1",
+      "url": "https://basf.jobs/job-invite/135176/?locale=en_US",
+      "city": "Pune",
+      "state": "Unknown",
+      "country": "India",
+      "company": "BASF India Coatings Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "G-ECO/AI",
+      "job_field": "Marketing & Sales",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-04-10T04:11:13Z",
+      "description": "O bjecti v es of t h e P osi t ion Support in achiving Sales Targets volume Value in Tata Motors Pantnagar Day to day Technical Service for our products being used at line. Line trials,testing and continuous improvement on line. On line Trouble Shooting to support customer for our products M ain Areas of Responsibilities and Key Activities To Coordinate with various customers and branches as well as with various departments for the smooth flow of activities. Responsible for the management and su",
+      "recruiter": {
+        "name": "Neha Bharadkar",
+        "email": "neha.bharadkar@basf.com"
+      }
+    },
     {
       "job_id": "135033",
       "title": "Manager, Sales India",
