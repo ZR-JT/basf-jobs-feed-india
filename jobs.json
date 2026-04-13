@@ -1,7 +1,49 @@
 {
-  "last_updated": "2026-04-13T06:09:37Z",
-  "total_active": 39,
+  "last_updated": "2026-04-13T13:03:02Z",
+  "total_active": 40,
   "jobs": [
+    {
+      "job_id": "131886",
+      "title": "Assistant Manager - Technical Development Flexible PU",
+      "url": "https://basf.jobs/job-invite/131886/?locale=en_US",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "company": "BASF India Limited",
+      "business_unit": "Asia Pacific",
+      "department": "A-PMA/PAD",
+      "job_field": "Production, Maintenance & Technical Services",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-04-13T07:49:16Z",
+      "description": "Objectives of the Position: To support customers and Technical Sales (Services and development) on technical solutions through technical development and drive PMU Projects. Identifying customer needs and opportunities in the field of PU Systems through Technical Development. PU system development, optimization/fine-tuning, Handling customer complaints, trials at customer end and coordinating with Technical Service for developments and quality complaints, etc Main Tasks: Technical Development in ",
+      "recruiter": {
+        "name": "Sejal Sandeep Singh",
+        "email": "sejal.sandeep-singh@partners.basf.com"
+      }
+    },
+    {
+      "job_id": "135271",
+      "title": "Process engineer",
+      "url": "https://basf.jobs/job-invite/135271/?locale=en_US",
+      "city": "Navi Mumbai - HO (Innovation Campus)",
+      "state": "Maharashtra",
+      "country": "India",
+      "company": "BASF Chemicals India Pvt. Ltd.",
+      "business_unit": "Asia Pacific",
+      "department": "RGR/CD",
+      "job_field": "Engineering",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-04-13T06:40:44Z",
+      "description": "About The Role Provide support to process engineering and technology transfer topics in India Prepare a comprehensive engineering package for process development and scale-up topics in India pertaining to batch processes Continuously support the production to optimize plant performance and output Support process engineering research lab development activities and innovation activities for OD-specific needs How Will You Do It Act as the “Focal point” of process engineering research in India to co",
+      "recruiter": {
+        "name": "Barkha Dawra",
+        "email": "barkha.dawra@partners.basf.com"
+      }
+    },
     {
       "job_id": "135176",
       "title": "Executive Technical Services 1",
@@ -630,27 +672,6 @@
       "recruiter": {
         "name": "Caroline Pham",
         "email": "caroline.pham@basf.com"
-      }
-    },
-    {
-      "job_id": "131886",
-      "title": "Assistant Manager - Technical Development Flexible PU",
-      "url": "https://basf.jobs/job-invite/131886/?locale=en_US",
-      "city": "Delhi",
-      "state": "Delhi",
-      "country": "India",
-      "company": "BASF India Limited",
-      "business_unit": "Asia Pacific",
-      "department": "A-PMA/PAD",
-      "job_field": "Production, Maintenance & Technical Services",
-      "job_level": "Professional",
-      "job_type": "Permanent",
-      "hybrid": false,
-      "date_posted": "2026-01-12T11:18:22Z",
-      "description": "Objectives of the Position: To support customers and Technical Sales (Services and development) on technical solutions through technical development and drive PMU Projects. Identifying customer needs and opportunities in the field of PU Systems through Technical Development. PU system development, optimization/fine-tuning, Handling customer complaints, trials at customer end and coordinating with Technical Service for developments and quality complaints, etc Main Tasks: Technical Development in ",
-      "recruiter": {
-        "name": "Sejal Sandeep Singh",
-        "email": "sejal.sandeep-singh@partners.basf.com"
       }
     },
     {
