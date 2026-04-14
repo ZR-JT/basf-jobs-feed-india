@@ -1,7 +1,28 @@
 {
-  "last_updated": "2026-04-14T01:45:02Z",
-  "total_active": 40,
+  "last_updated": "2026-04-14T05:55:55Z",
+  "total_active": 41,
   "jobs": [
+    {
+      "job_id": "135312",
+      "title": "Assistant Sales Manager, Pharma Solutions",
+      "url": "https://basf.jobs/job-invite/135312/?locale=en_US",
+      "city": "Godrej One - Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "company": "BASF India Limited",
+      "business_unit": "Asia Pacific",
+      "department": "G-ENP/EA",
+      "job_field": "Marketing & Sales",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-04-14T02:05:20Z",
+      "description": "About The Role Drive sales Growth: Plan sales strategy in order to achieve agreed sales target and grow sustainably in the defined territory. Find opportunities: Develop project pipeline with customers, business partners and through partnerships with technical team Close profitable deals Market Research to cover trends, regulation, competitor and growth opportunities How You Will Do It Strategic: Strategy Development, conceptualization and implementation: contribute to the development and drive ",
+      "recruiter": {
+        "name": "Sejal Sandeep Singh",
+        "email": "sejal.sandeep-singh@partners.basf.com"
+      }
+    },
     {
       "job_id": "131886",
       "title": "Assistant Manager - Technical Development Flexible PU",
