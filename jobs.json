@@ -1,7 +1,28 @@
 {
-  "last_updated": "2026-04-23T09:19:05Z",
-  "total_active": 40,
+  "last_updated": "2026-04-23T13:03:08Z",
+  "total_active": 41,
   "jobs": [
+    {
+      "job_id": "135806",
+      "title": "Trainee Officer-Process Lab",
+      "url": "https://basf.jobs/job-invite/135806/?locale=en_US",
+      "city": "Mangalore",
+      "state": "Karnataka",
+      "country": "India",
+      "company": "BASF India Coatings Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "G-ECO/DAI",
+      "job_field": "Research & Development",
+      "job_level": "Graduate",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-04-23T10:43:33Z",
+      "description": "O bjectives of the Position Take ownership for lab sample preparations as per target. Maintain 5S and follow work Safety instructions at all time as per RCMS Guideline M ain Tasks M inimum Education and Qualification Required for the Position M. Sc in Chemistry or Diploma in Chemical/Polymer/Coating Technology with relevant experience Min 6 Month. Experience",
+      "recruiter": {
+        "name": "Sunita Choudhary",
+        "email": "sunita.choudhary@partners.basf.com"
+      }
+    },
     {
       "job_id": "135312",
       "title": "Assistant Sales Manager, Pharma Solutions",
