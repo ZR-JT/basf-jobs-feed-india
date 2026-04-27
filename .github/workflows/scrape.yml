@@ -27,8 +27,7 @@ jobs:
           playwright install-deps chromium
 
       - name: Scraper ausfuehren
-        run: |
-          python scraper.py
+        run: python scraper.py
 
       - name: Dateien committen
         run: |
