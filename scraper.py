@@ -5,14 +5,8 @@ import aiohttp
 from playwright.async_api import async_playwright
 from datetime import datetime
 
-# ── ÄNDERUNG 1: Länderfilter in der BASF-Such-URL ───────────────────────────
 SEARCH_URL = "https://basf.jobs/?currentPage=1&pageSize=1000&addresses%2Fcountry=India"
-
 AZURE_URL = "https://searchui.search.windows.net/indexes/basf-prod/docs/search?api-version=2020-06-30"
-
-# ── ÄNDERUNG 2: Basis-URL für GitHub Pages ──────────────────────────────────
-# Passe das Repository an, falls du einen eigenen Feed für Indien nutzt.
-# Wenn es im selben Repo liegt, einfach den Unterordner anpassen:
 BASE_URL = "https://ZR-JT.github.io/basf-jobs-feed-india"
 
 def strip_html(text):
@@ -73,7 +67,6 @@ async def scrape_jobs():
         while True:
             search_body = {
                 "search": "*",
-                # ── ÄNDERUNG 3: Länderfilter in der Azure-API-Abfrage ────────
                 "filter": "addresses/any(a: a/country eq 'India')",
                 "select": "*",
                 "top": PAGE_SIZE,
@@ -181,7 +174,7 @@ async def scrape_jobs():
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"✅ jobs.json gespeichert — {len(jobs)} Jobs!")
 
-    # ── Nach Bundesstaat + Stadt gruppieren ─────────────────────────────────
+    # ── Nach Bundesstaat + Stadt gruppieren
     regions = {}
     for j in jobs:
         state = j.get("state", "Unknown")
@@ -193,7 +186,7 @@ async def scrape_jobs():
 
     sorted_regions = sorted(regions.keys(), key=lambda k: (k[0].lower(), k[1].lower()))
 
-    # ── Regionsseiten generieren ─────────────────────────────────────────────
+    # ── Regionsseiten generieren
     import os
     os.makedirs("regions", exist_ok=True)
 
@@ -232,7 +225,7 @@ async def scrape_jobs():
 <body>
 <p><a href="{BASE_URL}/index_lite.html">← Back to overview</a></p>
 <h1>BASF Jobs – {city}, {state}</h1>
-<p>Stand: {timestamp} | {len(region_jobs)} position(s)</p>
+<p>{len(region_jobs)} position(s)</p>
 {rows}
 </body>
 </html>"""
@@ -242,7 +235,9 @@ async def scrape_jobs():
 
     print(f"✅ {len(sorted_regions)} region pages generated!")
 
-    # ── index.html generieren (mit allen Jobtiteln + Links) ─────────────────
+    # ── index.html generieren
+    # ── ÄNDERUNG: job_field als [Tag] vor jedem Jobtitel eingefügt
+    # Dadurch kann der AI-Agent direkt nach Funktion filtern, ohne jede Detail-Seite zu fetchen
     index_rows = ""
     current_state = None
 
@@ -260,7 +255,17 @@ async def scrape_jobs():
 
         index_rows += f'<li><a href="{region_url}">{city}</a> ({count} position(s))<ul>\n'
         for j in region_jobs:
-            index_rows += f'  <li>{j.get("date_posted","")[:10]} – <a href="{j.get("url","")}">{j.get("title","")}</a></li>\n'
+            # ── ÄNDERUNG: job_field-Tag vor dem Jobtitel ──────────────────────
+            job_field = j.get("job_field", "")
+            field_tag = f"[{job_field}] " if job_field else ""
+            job_level = j.get("job_level", "")
+            level_tag = f"[{job_level}] " if job_level else ""
+            # ──────────────────────────────────────────────────────────────────
+            index_rows += (
+                f'  <li>{j.get("date_posted","")[:10]} – '
+                f'{field_tag}{level_tag}'
+                f'<a href="{j.get("url","")}">{j.get("title","")}</a></li>\n'
+            )
         index_rows += f'</ul></li>\n'
 
     if current_state is not None:
@@ -271,17 +276,16 @@ async def scrape_jobs():
 <head><meta charset="UTF-8"><title>BASF Jobs India – Overview</title></head>
 <body>
 <h1>BASF Job Openings India</h1>
-<p>Stand: {timestamp} | Total: {len(jobs)} positions | {len(sorted_regions)} locations</p>
+<p>Total: {len(jobs)} positions | {len(sorted_regions)} locations</p>
 {index_rows}
 </body>
 </html>"""
 
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(index_html)
-
     print(f"✅ index.html saved!")
 
-    # ── index_lite.html generieren ───────────────────────────────────────────
+    # ── index_lite.html generieren (unverändert)
     lite_rows = ""
     current_state = None
 
@@ -305,14 +309,13 @@ async def scrape_jobs():
 <head><meta charset="UTF-8"><title>BASF Jobs India – Location Overview</title></head>
 <body>
 <h1>BASF Job Openings India</h1>
-<p>Stand: {timestamp} | Total: {len(jobs)} positions | {len(sorted_regions)} locations</p>
+<p>Total: {len(jobs)} positions | {len(sorted_regions)} locations</p>
 {lite_rows}
 </body>
 </html>"""
 
     with open("index_lite.html", "w", encoding="utf-8") as f:
         f.write(lite_index_html)
-
     print(f"✅ index_lite.html saved!")
 
 asyncio.run(scrape_jobs())
