@@ -1,7 +1,28 @@
 {
-  "last_updated": "2026-05-12T06:32:11Z",
-  "total_active": 41,
+  "last_updated": "2026-05-12T10:24:49Z",
+  "total_active": 42,
   "jobs": [
+    {
+      "job_id": "117761",
+      "title": "Assistant Manager Customization Lab",
+      "url": "https://basf.jobs/job-invite/117761/?locale=en_US",
+      "city": "Mangalore",
+      "state": "Karnataka",
+      "country": "India",
+      "company": "BASF India Coatings Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "G-ECO/DAI",
+      "job_field": "Applications Technology",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-12T10:14:23Z",
+      "description": "O bjecti v es of t h e P osi t ion: To lead a customization team for 2-Wheeler customers and achieve set goals by organization M ain Areas of Responsibilities and Key Activities: Responsible for Works on development of new products and adaptation of existing products and tests the same to ascertain conformance to customer requirements. Implementation of Safety, 5S in work at allotted table. Prepare paint sample preparation and lab batch as per provided details. Color matching as per guidance tak",
+      "recruiter": {
+        "name": "Neha Bharadkar",
+        "email": "neha.bharadkar@basf.com"
+      }
+    },
     {
       "job_id": "138100",
       "title": "Sales Manager - Rigids PU (Construction)",
