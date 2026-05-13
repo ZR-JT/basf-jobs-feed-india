@@ -1,7 +1,28 @@
 {
-  "last_updated": "2026-05-13T06:44:31Z",
-  "total_active": 39,
+  "last_updated": "2026-05-13T10:14:03Z",
+  "total_active": 40,
   "jobs": [
+    {
+      "job_id": "138441",
+      "title": "Regional Product Manager",
+      "url": "https://basf.jobs/job-invite/138441/?locale=en_US",
+      "city": "Mangalore",
+      "state": "Karnataka",
+      "country": "India",
+      "company": "BASF India Coatings Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "G-ECO/MA",
+      "job_field": "Marketing & Sales",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-13T06:47:58Z",
+      "description": "M ain Areas of Responsibilities and Key Activities Product Portfolio Management : Develop and implement technology toolbox to optimize products, drive consolidation, and facilitate knowledge sharing among countries. Steward project proposals and manage PhaseGate projects. Strategic Marketing Projects : Lead marketing initiative for the Indian automotive market focused on profitable and sustainable growth. Conduct market analysis, optimize technology portfolios, and develop tailored product offer",
+      "recruiter": {
+        "name": "Sunita Choudhary",
+        "email": "sunita.choudhary@partners.basf.com"
+      }
+    },
     {
       "job_id": "117761",
       "title": "Assistant Manager Customization Lab",
