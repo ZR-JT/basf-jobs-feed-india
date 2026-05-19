@@ -1,7 +1,70 @@
 {
-  "last_updated": "2026-05-19T02:27:46Z",
-  "total_active": 41,
+  "last_updated": "2026-05-19T07:37:07Z",
+  "total_active": 42,
   "jobs": [
+    {
+      "job_id": "138634",
+      "title": "GDB/ZE - Product Owner Data Products (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138634/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/ZE Big Data Management",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-19T06:55:09Z",
+      "description": "Main tasks Drive and own the further development of the data product layer of our Enterprise Datalake to meet both user and internal needs. Align with local and global stakeholders to ensure the platform's scalability, reliability and security Together with your team ensure high quality of the services you are responsible for and initiate improvement measures as well as functionality Stay abreast of the newest technologies and trends in the big data and data mesh domain Act as the point of conta",
+      "recruiter": {
+        "name": "Santhosh Kumar S G",
+        "email": "santhosh.2183711@infosys.com"
+      }
+    },
+    {
+      "job_id": "138635",
+      "title": "GDB/ZE-Cloud Data Engineer(M/F/D)",
+      "url": "https://basf.jobs/job-invite/138635/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/ZE Big Data Management",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-19T06:55:06Z",
+      "description": "Main tasks • Develop, extend and optimize the data product layer of our Enterprise Datalake with high code standards, tests and suitable documentation to meet both user and internal needs. • Collaborate with the product owner and architect to understand data requirements and provide suitable solutions. • Troubleshoot data and software related issues and optimize pipelines for performance and scalability. • Work with Azure Databricks, Azure Data Factory/Synapse keeping up to date with the latest ",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138636",
+      "title": "GDB/ZE - Architect Data Products(M/F/D)",
+      "url": "https://basf.jobs/job-invite/138636/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/ZE Big Data Management",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-19T06:50:21Z",
+      "description": "Education ▪ Bachelor's degree in computer science, Information Technology, Engineering, Business, or related fields. Work experience ▪ Minimum 7-8 years related working experience as a Dataengineer using Azure, Databricks, Python, Azure Data Factory or Synapse Technical Professional Knowledge (mandatory) ▪ Experience in Agile way of working with a DevOps mindset ▪ In-depth know how with Lakehouse concepts, Databricks and Unity Catalog. ▪ Strong data engineering and development skills to maintain",
+      "recruiter": {
+        "name": "Nibedita Sahoo",
+        "email": "nibedita.sahoo@careernet.in"
+      }
+    },
     {
       "job_id": "138544",
       "title": "Frontend Developer",
@@ -486,27 +549,6 @@
       }
     },
     {
-      "job_id": "127756",
-      "title": "Site HR & Employee Relations - Thane Site",
-      "url": "https://basf.jobs/job-invite/127756/?locale=en_US",
-      "city": "Thane",
-      "state": "Maharashtra",
-      "country": "India",
-      "company": "BASF India Limited",
-      "business_unit": "Asia Pacific",
-      "department": "PM/LA",
-      "job_field": "Human Resources",
-      "job_level": "Professional",
-      "job_type": "Permanent",
-      "hybrid": false,
-      "date_posted": "2026-02-04T17:12:38Z",
-      "description": "Site HR Manager – Thane Site Location - Thane, India 1. Objectives of the Position: The Site Employee Relations Manager will play a critical role in fostering a positive work environment and enhancing employee engagement. This position is responsible for overseeing all aspects of human resources administration, employee relations, and ensuring compliance with company policies and legal regulations. The ideal candidate will have a strong background in HR practices, excellent communication skills,",
-      "recruiter": {
-        "name": "Sejal Sandeep Singh",
-        "email": "sejal.sandeep-singh@partners.basf.com"
-      }
-    },
-    {
       "job_id": "132997",
       "title": "Talent Community | BASF Digital Hub Hyderabad",
       "url": "https://basf.jobs/job-invite/132997/?locale=en_US",
@@ -714,27 +756,6 @@
       "recruiter": {
         "name": "Barkha Dawra",
         "email": "barkha.dawra@partners.basf.com"
-      }
-    },
-    {
-      "job_id": "131719",
-      "title": "Direct Tax - Assistant Manager",
-      "url": "https://basf.jobs/job-invite/131719/?locale=en_US",
-      "city": "Godrej One - Mumbai",
-      "state": "Maharashtra",
-      "country": "India",
-      "company": "BASF India Limited",
-      "business_unit": "Asia Pacific",
-      "department": "GB Global Business Services",
-      "job_field": "Finance, Controlling & Audit",
-      "job_level": "Professional",
-      "job_type": "Permanent",
-      "hybrid": false,
-      "date_posted": "2026-01-07T02:21:12Z",
-      "description": "About the Role This role's responsibility includes handling entire gamut of direct tax compliance, litigation and advisory for Group Company of BASF India. How You Will Do It Manage Quarterly Advance tax compliances Manage Withholding tax compliance (Domestic as well as foreign vendors including Dividend payments), TCS, SFT compliances including monthly payments and quarterly returns for BIL and Group company both Manage Annual Tax Audit compliance along with relevant annexures, co-ordinate with",
-      "recruiter": {
-        "name": "Caroline Pham",
-        "email": "caroline.pham@basf.com"
       }
     },
     {
