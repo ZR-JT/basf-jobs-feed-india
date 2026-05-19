@@ -1,7 +1,28 @@
 {
-  "last_updated": "2026-05-19T14:37:18Z",
-  "total_active": 45,
+  "last_updated": "2026-05-19T17:58:30Z",
+  "total_active": 46,
   "jobs": [
+    {
+      "job_id": "138694",
+      "title": "GDE/EB - Solution Designer (m/f/d)",
+      "url": "https://basf.jobs/job-invite/138694/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDE/EB Talent Management",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-19T16:33:44Z",
+      "description": "Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you will",
+      "recruiter": {
+        "name": "Santhosh Kumar S G",
+        "email": "santhosh.2183711@infosys.com"
+      }
+    },
     {
       "job_id": "138659",
       "title": "GDD/PK - Full Stack Developer (m/f/d)",
