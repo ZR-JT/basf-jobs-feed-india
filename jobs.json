@@ -1,7 +1,133 @@
 {
-  "last_updated": "2026-05-20T18:10:03Z",
-  "total_active": 47,
+  "last_updated": "2026-05-20T21:43:08Z",
+  "total_active": 53,
   "jobs": [
+    {
+      "job_id": "138765",
+      "title": "GDF/AF - Solution Consultant System Integration (EDI, Purchase-to-Pay) (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138765/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDF/AF Business Process Integration",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-24T18:30:00Z",
+      "description": "Main Tasks / Scope of Work The Solution Consultant provides customized integration solutions for internal partners and external partners via EDI, API, Micro Services, AI Agents, and similar technologies. The Solution Consultant supports our internal (SAP ERP and Satellite Systems) and external partners to specify their requirements and translates those into best-in-class solution designs based on technical and business process knowledge, aligned with process design and architecture. The consulta",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138764",
+      "title": "GDE/MB - SAP Consultant - functional output (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138764/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDE/MB",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-20T18:30:00Z",
+      "description": "Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you will",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138763",
+      "title": "GDE/MF - SAP Developer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138763/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDE/MF",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-20T18:30:00Z",
+      "description": "Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you will guide, coach and train other team members build competencies for the respective modules. - You wil",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138762",
+      "title": "GDE/MF - Solution Architect Automotive (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138762/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDE/MF",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-20T18:30:00Z",
+      "description": "Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you will",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138761",
+      "title": "GDE/MF - AI Engineer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138761/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDE/MF",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-20T18:30:00Z",
+      "description": "• Strong experience with Python for backend and AI development. • Hands-on experience with FastAPI (or similar Python web frameworks). • Practical experience with LLM frameworks such as: o OpenAI Agents SDK o LangChain o Or equivalent agent orchestration frameworks • Solid understanding of prompt engineering techniques. • Experience with memory management and context strategies for GenAI applications. • Experience deploying applications to Azure Cloud. • Familiarity with Docker and containerized",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138699",
+      "title": "GDE/FD - SAP Consultant (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138699/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDE/FD",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-20T18:06:21Z",
+      "description": "Responsibilities: \"You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you wil",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
     {
       "job_id": "138697",
       "title": "GDD/PH - Test Automation Engineer (M/F/D)",
