@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-22T17:45:17Z",
-  "total_active": 74,
+  "last_updated": "2026-05-22T21:03:51Z",
+  "total_active": 86,
   "jobs": [
     {
       "job_id": "138765",
@@ -18,6 +18,279 @@
       "hybrid": false,
       "date_posted": "2026-05-24T18:30:00Z",
       "description": "Main Tasks / Scope of Work The Solution Consultant provides customized integration solutions for internal partners and external partners via EDI, API, Micro Services, AI Agents, and similar technologies. The Solution Consultant supports our internal (SAP ERP and Satellite Systems) and external partners to specify their requirements and translates those into best-in-class solution designs based on technical and business process knowledge, aligned with process design and architecture. The consulta",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138876",
+      "title": "GDB/DG - Cloud System Engiineer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138876/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/DG Data Science Platform",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "Responsibilities: We are looking for a Senior Cloud Systems Engineer with strong experience in module development, Azure PaaS, and Python. You will build and maintain core cloud platform capabilities, automate infrastructure and service provisioning, and support teams consuming Azure PaaS services. Qualifications: Module Development, Azure Paas, Python Bachelor’s degree in Computer Science, Information Systems, or a related field. Minimum of 3 years of experience as a Cloud System Engineer. Expe",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138879",
+      "title": "GDB/ZI - API Management Specialist (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138879/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/ZI",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "Objectives You will be responsible for the technical design and implementation of API-Proxies while ensuring compliance with all relevant BASF development guidelines. Beyond that you will support respective testing and error correction activities. You create and further develop concepts for operation topics and implement them in our team. Implement automation for our API-Management by using the management APIs of the related software components. Consulting of projects on the setup of integration",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138882",
+      "title": "GDB/ZI - Integration Platform Frontend Engineer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138882/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/ZI",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "Objectives Describe your Product mission here (2 - 3 sentences only) Join our “Data Foundation” team and work on the cutting-edge “Integration” product that leverages innovative technologies to seamlessly connect applications and facilitate data exchange. The Integration Platform is a versatile framework for building and executing integration scenarios—serving both internal and external needs. With the platform and its underlying technologies, you’ll have access to advanced tools and processes d",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138883",
+      "title": "GDB/ZI - Integration Specialist (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138883/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/ZI",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "Objectives Our product Integration Platform enables the stable, transparent, and governed operation of enterprise integrations across BASF. The Service Engineer / Owner ensures business continuity and operational excellence of the integration landscape. In this role, you ensure reliable operation of the Integration Platform and its underlying runtimes (including SAP Integration technologies). You support developers, operations teams, partners, and architects in day to day platform usage and evol",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138877",
+      "title": "GDB/DG - Platform Engineer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138877/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/DG Data Science Platform",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "Responsibilities: We are seeking a highly skilled Platform Engineer with deep expertise in CDKTF, Azure PaaS, and Python to design, automate, and operate platform capabilities that enable development teams across BASF to build and deploy applications efficiently and securely. Your work will contribute to BASF’s internal developer platform ecosystem — designing scalable platform components, codifying cloud infrastructure, and building reusable modules and tooling that empower engineering teams. Q",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138878",
+      "title": "GDB/DG - DevOps Engineer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138878/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/DG",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "Responsibilities: We are looking for a DevOps Engineer with deep expertise in CI/CD automation, end‑to‑end workflow ownership, and GitHub Actions. You will design, standardize, and operate automated delivery pipelines that enable development teams to ship high‑quality software rapidly and reliably. The role requires strong ownership of workflows, proactive improvement of DevOps processes, and close collaboration with developers, architects, and product teams. Qualifications: CI/CD Automation, Wo",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138884",
+      "title": "GDB/ZI - Service Engineer Owner (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138884/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/ZI",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "Objectives Our product Integration Platform enables the stable, transparent, and governed operation of enterprise integrations across BASF. The Service Engineer / Owner ensures business continuity and operational excellence of the integration landscape. In this role, you ensure reliable operation of the Integration Platform and its underlying runtimes (including SAP Integration technologies). You support developers, operations teams, partners, and architects in day to day platform usage and evol",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138881",
+      "title": "GDB/ZI - Integration Platform Engineer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138881/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/ZI Integration & Data Strategy",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "Objectives Describe your Product mission here (2 - 3 sentences only) Join our “Data Foundation” team and work on the cutting-edge “Integration” product that leverages innovative technologies to seamlessly connect applications and facilitate data exchange. The Integration Platform is a versatile framework for building and executing integration scenarios—serving both internal and external needs. With the platform and its underlying technologies, you’ll have access to advanced tools and processes d",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138874",
+      "title": "GDB/DG - Senior Platform Engineer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138874/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/DG",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T18:10:42Z",
+      "description": "Responsibilities: We are looking for a highly skilled Senior Platform Engineer with deep expertise in Python, Terraform CDK (CDKTF), and Azure PaaS services to join our platform engineering organization. You will design, build, and optimize platform components that enable development teams to ship secure, scalable, and reliable applications. Qualifications: Python, CDKTF, Azure Paas Bachelor’s degree in Computer Science, Information Systems, or a related field. Minimum of 6 years of experience a",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138871",
+      "title": "GDD/GD - Yard Management - SAP TM Functional Consultant (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138871/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDD/GD Yard Management Individual Solutions",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T17:56:28Z",
+      "description": "Role main activities. What is expected from you? We are looking for a seasoned SAP Transportation Management (TM) Functional Consultant with deep expertise in S/4HANA TM, a solid understanding of end-to-end supply chain logistics, and proven delivery experience in the chemical industry. The successful candidate will lead the design, configuration, drive cross-functional alignment, act as a bridge between business stakeholders and technical teams and optimise our Yard Management solutions which h",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138870",
+      "title": "GDD/GD - Yard Management DevOps - Back-End (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138870/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDD/GD Yard Management Individual Solutions",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T17:47:00Z",
+      "description": "End-to-End responsibility and accountability on building up a product that balances a good level of standardization and scalability with a reasonable level of customization. • Consultancy o Translates functional requirements into technical specifications o Leverage the business/process knowledge in the teams and define the best technical design of new functionalities o Drive for sustainable solutions o Leverages the use of standard functionalities to reduce non-standard development • Development",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138869",
+      "title": "GDE/DC - SAP Consultant - COPC (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138869/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDE/DC Business Accounting & Reporting",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T17:45:59Z",
+      "description": "Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you will",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138868",
+      "title": "GDE/DD - SAP Consultant Finance & Tax (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138868/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDE/DD Legal, Tax & Compliance",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T17:44:44Z",
+      "description": "Role Description The Digitalization Specialist supports the design, implementation, and operation of eDocument and Statutory Reporting solutions across multiple countries and systems. The role ensures compliance with local tax regulations, stable system integrations, and close coordination between business, IT, and external vendors. This position plays a key role in global and country-specific rollouts, incident resolution, and continuous improvement of SAP ECC and S/4HANA finance and compliance",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -819,27 +1092,6 @@
       "recruiter": {
         "name": "Sue Yan Ng",
         "email": "sue-yan.ng@basf.com"
-      }
-    },
-    {
-      "job_id": "135806",
-      "title": "Trainee Officer-Process Lab",
-      "url": "https://basf.jobs/job-invite/135806/?locale=en_US",
-      "city": "Mangalore",
-      "state": "Karnataka",
-      "country": "India",
-      "company": "BASF India Coatings Private Limited",
-      "business_unit": "Asia Pacific",
-      "department": "G-ECO/DAI",
-      "job_field": "Research & Development",
-      "job_level": "Graduate",
-      "job_type": "Permanent",
-      "hybrid": false,
-      "date_posted": "2026-04-23T10:43:33Z",
-      "description": "O bjectives of the Position Take ownership for lab sample preparations as per target. Maintain 5S and follow work Safety instructions at all time as per RCMS Guideline M ain Tasks M inimum Education and Qualification Required for the Position M. Sc in Chemistry or Diploma in Chemical/Polymer/Coating Technology with relevant experience Min 6 Month. Experience",
-      "recruiter": {
-        "name": "Sunita Choudhary",
-        "email": "sunita.choudhary@partners.basf.com"
       }
     },
     {
