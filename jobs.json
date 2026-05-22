@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-22T10:42:20Z",
-  "total_active": 64,
+  "last_updated": "2026-05-22T14:17:29Z",
+  "total_active": 68,
   "jobs": [
     {
       "job_id": "138765",
@@ -18,6 +18,90 @@
       "hybrid": false,
       "date_posted": "2026-05-24T18:30:00Z",
       "description": "Main Tasks / Scope of Work The Solution Consultant provides customized integration solutions for internal partners and external partners via EDI, API, Micro Services, AI Agents, and similar technologies. The Solution Consultant supports our internal (SAP ERP and Satellite Systems) and external partners to specify their requirements and translates those into best-in-class solution designs based on technical and business process knowledge, aligned with process design and architecture. The consulta",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138854",
+      "title": "GDD/GC - Specialist Warehouse Management (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138854/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDD/GC Extended Warehouse Management",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T12:36:54Z",
+      "description": "Responsibilities: • Assess Business Requirements: Collaborate with stakeholders to understand and analyze warehouse management needs and translate them into effective SAP solutions. • Solution Design and Configuration: Design, configure, and implement SAP Warehouse Management (WM) and Extended Warehouse Management (EWM) solutions to streamline inventory management processes and enhance system performance. • Integration: Ensure seamless integration with other SAP modules (e.g., MM, PP, QM) and no",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138848",
+      "title": "GDS/A - Cyber Security Compliance and Assurance  (M/F/A)",
+      "url": "https://basf.jobs/job-invite/138848/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDS/A Governance, Risk & Compliance",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T11:55:30Z",
+      "description": "Main Tasks: • Ensuring Compliance with Security and Regulatory Requirements: Monitor and assess adherence to legal, regulatory, and internal requirements in information security and data protection. • Conducting Audits and Assessments: Plan, coordinate, and execute internal and external audits as well as risk and compliance assessments to identify vulnerabilities and areas for improvement. • Consulting and Training: Support and raise awareness among business units and employees on compliance and",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138847",
+      "title": "GDE/FC - SAP Consultant (m/f/d)",
+      "url": "https://basf.jobs/job-invite/138847/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDE/FC Environmental Compliance",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T11:38:20Z",
+      "description": "Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you will",
+      "recruiter": {
+        "name": "Santhosh Kumar SG",
+        "email": "santhosh.2183711@infosys.com"
+      }
+    },
+    {
+      "job_id": "138837",
+      "title": "GD/C - Controlling Specialist (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138837/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GD/C Digitalization Controlling & Finance",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T11:33:41Z",
+      "description": "Key Responsibilities and Main Tasks • Conduct cost analysis, monitoring, reporting, and budgeting for your assigned business area. • Liaise with the Finance Manager of the company. • Provide actionable insights and recommendations to drive the future development of your business area within the BASF Group. • Deliver reliable financial information to support management decision-making and strategic planning. • Gain a comprehensive understanding of global accounting and charging mechanisms. • Lead",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
