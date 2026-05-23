@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-23T02:06:34Z",
-  "total_active": 86,
+  "last_updated": "2026-05-23T06:28:52Z",
+  "total_active": 87,
   "jobs": [
     {
       "job_id": "138765",
@@ -24,21 +24,21 @@
       }
     },
     {
-      "job_id": "138876",
-      "title": "GDB/DG - Cloud System Engiineer (M/F/D)",
-      "url": "https://basf.jobs/job-invite/138876/?locale=en_US",
+      "job_id": "138698",
+      "title": "GDD/EK - Senior DevOps Engineer Plant Maintenance & Engineering Project Solutions (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138698/?locale=en_US",
       "city": "Hyderabad",
       "state": "Andhra Pradesh",
       "country": "India",
       "company": "BASF Digital Solutions Private Limited",
       "business_unit": "Asia Pacific",
-      "department": "GDB/DG Data Science Platform",
+      "department": "GDD/EK",
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
       "hybrid": false,
-      "date_posted": "2026-05-22T18:30:00Z",
-      "description": "Responsibilities: We are looking for a Senior Cloud Systems Engineer with strong experience in module development, Azure PaaS, and Python. You will build and maintain core cloud platform capabilities, automate infrastructure and service provisioning, and support teams consuming Azure PaaS services. Qualifications: Module Development, Azure Paas, Python Bachelor’s degree in Computer Science, Information Systems, or a related field. Minimum of 3 years of experience as a Cloud System Engineer. Expe",
+      "date_posted": "2026-05-23T05:51:25Z",
+      "description": "Responsibilities: Formular to success: - Demonstrating your proficiency in the SAP Modules Plant Maintenance, Project Systems or Project and Portfolio Management, where you will support our system and its related mobile Apps. - Your main tasks will be error and problem solving, debugging and testing of SAP standard functions as well as own developed programs. - Act as a Global / Regional representative of BASF Digital community, supporting BASF Digital roadmap, helping Global Digital Services to",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -60,6 +60,27 @@
       "hybrid": false,
       "date_posted": "2026-05-22T18:30:00Z",
       "description": "Objectives You will be responsible for the technical design and implementation of API-Proxies while ensuring compliance with all relevant BASF development guidelines. Beyond that you will support respective testing and error correction activities. You create and further develop concepts for operation topics and implement them in our team. Implement automation for our API-Management by using the management APIs of the related software components. Consulting of projects on the setup of integration",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138876",
+      "title": "GDB/DG - Cloud System Engiineer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138876/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/DG Data Science Platform",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "Responsibilities: We are looking for a Senior Cloud Systems Engineer with strong experience in module development, Azure PaaS, and Python. You will build and maintain core cloud platform capabilities, automate infrastructure and service provisioning, and support teams consuming Azure PaaS services. Qualifications: Module Development, Azure Paas, Python Bachelor’s degree in Computer Science, Information Systems, or a related field. Minimum of 3 years of experience as a Cloud System Engineer. Expe",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -108,27 +129,6 @@
       }
     },
     {
-      "job_id": "138877",
-      "title": "GDB/DG - Platform Engineer (M/F/D)",
-      "url": "https://basf.jobs/job-invite/138877/?locale=en_US",
-      "city": "Hyderabad",
-      "state": "Andhra Pradesh",
-      "country": "India",
-      "company": "BASF Digital Solutions Private Limited",
-      "business_unit": "Asia Pacific",
-      "department": "GDB/DG Data Science Platform",
-      "job_field": "Digitalization",
-      "job_level": "Professional",
-      "job_type": "Permanent",
-      "hybrid": false,
-      "date_posted": "2026-05-22T18:30:00Z",
-      "description": "Responsibilities: We are seeking a highly skilled Platform Engineer with deep expertise in CDKTF, Azure PaaS, and Python to design, automate, and operate platform capabilities that enable development teams across BASF to build and deploy applications efficiently and securely. Your work will contribute to BASF’s internal developer platform ecosystem — designing scalable platform components, codifying cloud infrastructure, and building reusable modules and tooling that empower engineering teams. Q",
-      "recruiter": {
-        "name": "Senthil Kumar",
-        "email": "senthil.kumar@careernet.in"
-      }
-    },
-    {
       "job_id": "138878",
       "title": "GDB/DG - DevOps Engineer (M/F/D)",
       "url": "https://basf.jobs/job-invite/138878/?locale=en_US",
@@ -144,6 +144,27 @@
       "hybrid": false,
       "date_posted": "2026-05-22T18:30:00Z",
       "description": "Responsibilities: We are looking for a DevOps Engineer with deep expertise in CI/CD automation, end‑to‑end workflow ownership, and GitHub Actions. You will design, standardize, and operate automated delivery pipelines that enable development teams to ship high‑quality software rapidly and reliably. The role requires strong ownership of workflows, proactive improvement of DevOps processes, and close collaboration with developers, architects, and product teams. Qualifications: CI/CD Automation, Wo",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138877",
+      "title": "GDB/DG - Platform Engineer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138877/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/DG Data Science Platform",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "Responsibilities: We are seeking a highly skilled Platform Engineer with deep expertise in CDKTF, Azure PaaS, and Python to design, automate, and operate platform capabilities that enable development teams across BASF to build and deploy applications efficiently and securely. Your work will contribute to BASF’s internal developer platform ecosystem — designing scalable platform components, codifying cloud infrastructure, and building reusable modules and tooling that empower engineering teams. Q",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -528,27 +549,6 @@
       }
     },
     {
-      "job_id": "138815",
-      "title": "GDD/GA - Full Stack Mobile Developer (M/F/D)",
-      "url": "https://basf.jobs/job-invite/138815/?locale=en_US",
-      "city": "Hyderabad",
-      "state": "Andhra Pradesh",
-      "country": "India",
-      "company": "BASF Digital Solutions Private Limited",
-      "business_unit": "Asia Pacific",
-      "department": "GDD/GA",
-      "job_field": "Digitalization",
-      "job_level": "Professional",
-      "job_type": "Permanent",
-      "hybrid": false,
-      "date_posted": "2026-05-21T18:30:00Z",
-      "description": "Responsibilities: • Working in a global agile Development and Operations environment, you need to have good communication skills to keep intensively aligned with our stakeholders and our team of technical and functional experts. • You will strongly cooperate with logistics consultants and other developers, mainly taking care about the further improvement and development of our mobile solutions within Site Logistics. • As a service provider it is our ultimate target to enable and support our inte",
-      "recruiter": {
-        "name": "Senthil Kumar",
-        "email": "senthil.kumar@careernet.in"
-      }
-    },
-    {
       "job_id": "138817",
       "title": "GDD/BA - SAP Production Consultant (M/F/D)",
       "url": "https://basf.jobs/job-invite/138817/?locale=en_US",
@@ -564,6 +564,27 @@
       "hybrid": false,
       "date_posted": "2026-05-21T18:30:00Z",
       "description": "Your main responsibilities: • Being part of a diverse global team and working with colleagues on complex IT projects in the Manufacturing area delivering crucial solutions to businesses, functions, and operations across BASF • Consulting, implementing, and supporting the full lifecycle of our products globally with focus on SAP PP PP/PI • Leading IT project manufacturing workstreams and performing all required workstream tasks from requirement engineering till after go live tasks • Understand an",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138815",
+      "title": "GDD/GA - Full Stack Mobile Developer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138815/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDD/GA",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-05-21T18:30:00Z",
+      "description": "Responsibilities: • Working in a global agile Development and Operations environment, you need to have good communication skills to keep intensively aligned with our stakeholders and our team of technical and functional experts. • You will strongly cooperate with logistics consultants and other developers, mainly taking care about the further improvement and development of our mobile solutions within Site Logistics. • As a service provider it is our ultimate target to enable and support our inte",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
