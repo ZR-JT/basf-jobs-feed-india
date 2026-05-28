@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-27T21:50:00Z",
-  "total_active": 151,
+  "last_updated": "2026-05-28T07:48:26Z",
+  "total_active": 150,
   "jobs": [
     {
       "job_id": "138977",
@@ -752,7 +752,7 @@
       "job_type": "Permanent",
       "hybrid": false,
       "date_posted": "2026-05-23T12:33:15Z",
-      "description": "Minimum 5years’ experience in supply chain with good understanding of system background (SAP APO, IBP, OMP or others) Excellent communication skills in English with customers/Internal business partners Supply chain system functional design, configuration and debugging experience Technical Professional Knowledge: Solid DevOps knowledge of supply chain planning related solutions Process knowledge of supply chain planning at least in one of below area: Demand Planning, S OP, Supply Planning, Detail",
+      "description": "DevOps Engineer OMP SnOP Main Areas of Responsibilities and Key Activities You are responsible for designing, implementing, and supporting OMP related developments using OPAL. Deep-dive into the supply chain planning environment and focus on Sales Operational planning and Supply Planning Be part of supply chain planning system squads to work on functional development, supply chain planning solutions design, system configuration as well as on-going support after roll out in BUs/ODs. Build and dep",
       "recruiter": {
         "name": "Santhosh Kumar SG",
         "email": "santhosh.2183711@infosys.com"
@@ -2812,8 +2812,8 @@
       "date_posted": "2026-02-27T05:15:06Z",
       "description": "About The Role Technical key account management and key interface of customers R D Translate the customer needs into technical projects briefing Drive Technical service projects delivery with business impact How You Will Do It 1. Technical Interface Application Development Serve as the gatekeeper for all R D and technical exchanges between customers and BASF. Develop appropriate solutions in lab and present technical proposals, new concepts, and application ideas tailored to customer needs. Supp",
       "recruiter": {
-        "name": "Caroline Pham",
-        "email": "caroline.pham@basf.com"
+        "name": "Barkha Dawra",
+        "email": "barkha.dawra@partners.basf.com"
       }
     },
     {
@@ -3132,23 +3132,6 @@
         "name": "Deepashri Nair",
         "email": "deepashri.nair@basf.com",
         "phone": "+910226791-7499"
-      }
-    },
-    {
-      "job_id": "113312",
-      "title": "Mechanical Technician",
-      "url": "https://basf.jobs/job-invite/113312/?locale=en_US",
-      "city": "Panoli",
-      "state": "Gujarat",
-      "country": "India",
-      "company": "BASF India Limited",
-      "department": "A-PMA/OM",
-      "hybrid": false,
-      "date_posted": "2024-11-26T03:57:47Z",
-      "description": "O bjecti v es of t h e P osi t ion Maintenance of plant equipment including twin screw extruders, pelletizers, loss in weight feeders, pneumatic conveying systems, classifiers, packaging and sealing machines, etc. Utility In charge: Responsible for smooth operation of Utility equipment at site, Preventive maintenance planning and Execution for all utility equipment including chilled water system, air compressor system, fume scrubber system and dust collector system. Spare part management for Smo",
-      "recruiter": {
-        "name": "Phuong Nguyen Thi Hoai",
-        "email": "phuong.hoai@basf.com"
       }
     },
     {
