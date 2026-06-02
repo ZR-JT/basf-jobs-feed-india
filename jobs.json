@@ -1,7 +1,28 @@
 {
-  "last_updated": "2026-06-02T02:41:36Z",
-  "total_active": 149,
+  "last_updated": "2026-06-02T08:20:33Z",
+  "total_active": 148,
   "jobs": [
+    {
+      "job_id": "139014",
+      "title": "Sales Manager PU - Footwear, Sports & Leisure 1",
+      "url": "https://basf.jobs/job-invite/139014/?locale=en_US",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "company": "BASF India Limited",
+      "business_unit": "Asia Pacific",
+      "department": "A-PMA/PFW",
+      "job_field": "Marketing & Sales",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-06-02T06:17:17Z",
+      "description": "O bjecti v es of t h e P osi t ion To implement PU systems for Footwear,Sports Leisure, Performance Materials India sales. To implement marketing strategy in new business development Initiate, develop grow customer relationships with existing and potential customers. Execute PU system sales in Footwear,Sports Leisure develop business according to the country regional strategy and objectives. Provide input for account plans, and update them periodically Implement pricing strategy according to reg",
+      "recruiter": {
+        "name": "Sejal Sandeep Singh",
+        "email": "sejal.sandeep-singh@partners.basf.com"
+      }
+    },
     {
       "job_id": "138941",
       "title": "Sales Manager - Animal Nutrition, Vitamins and Carotenoids",
@@ -795,48 +816,6 @@
       "hybrid": false,
       "date_posted": "2026-05-23T11:28:25Z",
       "description": "Responsibilities: - Engineer Core Components: Lead the development of the orchestration service and Agent-to-Agent (A2A) bus, writing high-performance Python code that routes thousands of requests per minute. - Build Complex Agents: Implement \"Horizon 3/4\" autonomous agents (e.g., self-correcting coding agents, complex supply chain optimizers) using LangGraph or AutoGen hosted on AKS. - Integrate Data AI: Build robust integrations between Databricks (Unity Catalog) and our agent runtime, ensurin",
-      "recruiter": {
-        "name": "Senthil Kumar",
-        "email": "senthil.kumar@careernet.in"
-      }
-    },
-    {
-      "job_id": "138916",
-      "title": "GDB/X - RPA Administrator (M/F/D)",
-      "url": "https://basf.jobs/job-invite/138916/?locale=en_US",
-      "city": "Hyderabad",
-      "state": "Andhra Pradesh",
-      "country": "India",
-      "company": "BASF Digital Solutions Private Limited",
-      "business_unit": "Asia Pacific",
-      "department": "GBI/UP-D Data Analytics & AI",
-      "job_field": "Digitalization",
-      "job_level": "Professional",
-      "job_type": "Permanent",
-      "hybrid": false,
-      "date_posted": "2026-05-23T11:27:35Z",
-      "description": "Responsibilities: In this role you will be responsible for among others setting, managing UIPath automation platform, integration, governance, upgrades, bot management and orchestration. Work with other automation teams to understand requirements and develop roadmap • Quality and sustainability assurance o Technical steering and quality management o Assure compliance to global processes, guidelines and policies • Trainings, exchange, and support on best practices, supporting the BASF organizatio",
-      "recruiter": {
-        "name": "Senthil Kumar",
-        "email": "senthil.kumar@careernet.in"
-      }
-    },
-    {
-      "job_id": "138913",
-      "title": "GDB/X - RPA Engineer (M/F/D)",
-      "url": "https://basf.jobs/job-invite/138913/?locale=en_US",
-      "city": "Hyderabad",
-      "state": "Andhra Pradesh",
-      "country": "India",
-      "company": "BASF Digital Solutions Private Limited",
-      "business_unit": "Asia Pacific",
-      "department": "GBI/UP-D Data Analytics & AI",
-      "job_field": "Digitalization",
-      "job_level": "Professional",
-      "job_type": "Permanent",
-      "hybrid": false,
-      "date_posted": "2026-05-23T10:50:54Z",
-      "description": "Responsibilities: In this role you will be responsible for among others setting, reviewing scripts and enhancing global RPA standards, scripts and bot-configuration with UiPath and boosting digitalization at BASF • Quality and sustainability assurance o Technical steering and quality management o Assure compliance to global processes, guidelines and policies • Automation o Manage and deliver scripting and automation as a service o Defining and developing of libraries, frameworks and custom activ",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -2119,8 +2098,8 @@
       "date_posted": "2026-05-21T07:52:44Z",
       "description": "O bjectives of the Position Shift + Enter proceeds to the next line without bullet; Enter inserts new bullet Lead, coordinate and monitor engineering projects and maintenance function as per the agreed norms under the direction of production head. Ensuring smooth functioning of production Paint CED plant with minimum breakdowns by developing, implementing and sustaining best plant maintenance. To provide Maintenance services to Coatings Technology centre (CTC), ECR labs. Lead, coordinate and mon",
       "recruiter": {
-        "name": "Vishmitha Bangera",
-        "email": "vishmitha.bangera@basf.com"
+        "name": "Sunita Choudhary",
+        "email": "sunita.choudhary@partners.basf.com"
       }
     },
     {
