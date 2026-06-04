@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-04T14:35:34Z",
+  "last_updated": "2026-06-04T21:24:09Z",
   "total_active": 158,
   "jobs": [
     {
@@ -1023,9 +1023,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-23T11:28:25Z",
-      "description": "Responsibilities: - Engineer Core Components: Lead the development of the orchestration service and Agent-to-Agent (A2A) bus, writing high-performance Python code that routes thousands of requests per minute. - Build Complex Agents: Implement \"Horizon 3/4\" autonomous agents (e.g., self-correcting coding agents, complex supply chain optimizers) using LangGraph or AutoGen hosted on AKS. - Integrate Data AI: Build robust integrations between Databricks (Unity Catalog) and our agent runtime, ensurin",
+      "description": "Senior Agentic AI Engineer OrgCode: GDB/X Product Team: Intelligent Automation Responsibilities: - Engineer Core Components: Lead the development of the orchestration service and Agent-to-Agent (A2A) bus, writing high-performance Python code that routes thousands of requests per minute. - Build Complex Agents: Implement \"Horizon 3/4\" autonomous agents (e.g., self-correcting coding agents, complex supply chain optimizers) using LangGraph or AutoGen hosted on AKS. - Integrate Data AI: Build robust",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -1107,9 +1107,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-23T10:03:45Z",
-      "description": "Responsibilities • Design, implement, and operate compliant SAP authorization roles and user access to support BASF’s digital transformation • Ensure secure and compliant platform operations through accurate authorization design and issue resolution • Govern and steer authorization delivery by suppliers, including request fulfillment, escalation management, and SLA compliance • Develop, enhance, and maintain SAP authorization concepts, guidelines, and security requirements • Monitor existing aut",
+      "description": "(Digital) Senior SAP Authorization Specialist – Job Grade 4 About Us At BASF’s Global Digital Services (GD), we are passionate about driving digital transformation in the chemical industry. Our dedicated teams deliver tailored digital products and services to internal business partners worldwide, leveraging the power of our Digital Hubs as dynamic centers of innovation and collaboration that bring us closer to our customers and regional needs. Here, you’ll join a high-performance culture inspire",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -1338,9 +1338,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-23T09:04:54Z",
-      "description": "Bachelor’s or Master’s degree in Business, Finance, Controlling, or Accounting. Several years of relevant experience in business or controlling functions is preferred. Strong proficiency in controlling IT tools such as MS Office, SAP BW, SAP CO/CI, and PowerBI. Excellent analytical and numerical skills, with a strong ability to learn and work independently as well as in a team. Team player with a high service orientation and a proactive, continuous improvement mindset. Strong communication skill",
+      "description": "Senior DevOps Engineer NCM OrgCode: GDD/EC Product Team: Non-Conformance Management Responsibilities: - In this role, you will be end-to-end responsible for the development and management of our Non-Conformance Management solution, which is based on, but not limited to SAP R/3 and S/4. - You will be responsible for technical design of application enhancements, new applications for BASF NCM processes and support testing and system maintenance activities. - You will develop the application by usin",
       "recruiter": {
         "name": "Santhosh Kumar SG",
         "email": "santhosh.2183711@infosys.com"
@@ -1571,7 +1571,7 @@
       "job_type": "Permanent",
       "hybrid": true,
       "date_posted": "2026-05-23T07:08:06Z",
-      "description": "A Bachelor or master degree in relevant Business/IT studies You are experienced with the salesforce.com sales cloud administration Certified salesforce administrator with deployment know-how An entrepreneurial spirit and the ability to foster a positive and energized culture A growth mindset with a curiosity to learn and improve. Team player with strong interpersonal, written, and verbal communication skills. You can demonstrate fluent communication skills in English (spoken and written)",
+      "description": "What you can expect Digital Solutions for Sales supports BASF's strategy to focus our strengths on our customers by providing capabilities to continuously optimize business decisions and customer experience. You will be part of a truly global team, working agile and with a high passion to enable our sales teams to perform at their best. Your main responsibilities: Ensure operational integration of the platform Define the needed review and monitoring processes Interact with salesforce on upcoming",
       "recruiter": {
         "name": "Santhosh Kumar SG",
         "email": "santhosh.2183711@infosys.com"
@@ -1620,48 +1620,6 @@
       }
     },
     {
-      "job_id": "138879",
-      "title": "GDB/ZI - API Management Specialist (M/F/D)",
-      "url": "https://basf.jobs/job-invite/138879/?locale=en_US",
-      "city": "Hyderabad",
-      "state": "Andhra Pradesh",
-      "country": "India",
-      "company": "BASF Digital Solutions Private Limited",
-      "business_unit": "Asia Pacific",
-      "department": "GDB/ZI",
-      "job_field": "Digitalization",
-      "job_level": "Professional",
-      "job_type": "Permanent",
-      "hybrid": false,
-      "date_posted": "2026-05-22T18:30:00Z",
-      "description": "Objectives You will be responsible for the technical design and implementation of API-Proxies while ensuring compliance with all relevant BASF development guidelines. Beyond that you will support respective testing and error correction activities. You create and further develop concepts for operation topics and implement them in our team. Implement automation for our API-Management by using the management APIs of the related software components. Consulting of projects on the setup of integration",
-      "recruiter": {
-        "name": "Senthil Kumar",
-        "email": "senthil.kumar@careernet.in"
-      }
-    },
-    {
-      "job_id": "138876",
-      "title": "GDB/DG - Cloud System Engiineer (M/F/D)",
-      "url": "https://basf.jobs/job-invite/138876/?locale=en_US",
-      "city": "Hyderabad",
-      "state": "Andhra Pradesh",
-      "country": "India",
-      "company": "BASF Digital Solutions Private Limited",
-      "business_unit": "Asia Pacific",
-      "department": "GDB/DG Data Science Platform",
-      "job_field": "Digitalization",
-      "job_level": "Professional",
-      "job_type": "Permanent",
-      "hybrid": false,
-      "date_posted": "2026-05-22T18:30:00Z",
-      "description": "Responsibilities: We are looking for a Senior Cloud Systems Engineer with strong experience in module development, Azure PaaS, and Python. You will build and maintain core cloud platform capabilities, automate infrastructure and service provisioning, and support teams consuming Azure PaaS services. Qualifications: Module Development, Azure Paas, Python Bachelor’s degree in Computer Science, Information Systems, or a related field. Minimum of 3 years of experience as a Cloud System Engineer. Expe",
-      "recruiter": {
-        "name": "Senthil Kumar",
-        "email": "senthil.kumar@careernet.in"
-      }
-    },
-    {
       "job_id": "138882",
       "title": "GDB/ZI - Integration Platform Frontend Engineer (M/F/D)",
       "url": "https://basf.jobs/job-invite/138882/?locale=en_US",
@@ -1704,30 +1662,9 @@
       }
     },
     {
-      "job_id": "138878",
-      "title": "GDB/DG - DevOps Engineer (M/F/D)",
-      "url": "https://basf.jobs/job-invite/138878/?locale=en_US",
-      "city": "Hyderabad",
-      "state": "Andhra Pradesh",
-      "country": "India",
-      "company": "BASF Digital Solutions Private Limited",
-      "business_unit": "Asia Pacific",
-      "department": "GDB/DG",
-      "job_field": "Digitalization",
-      "job_level": "Professional",
-      "job_type": "Permanent",
-      "hybrid": false,
-      "date_posted": "2026-05-22T18:30:00Z",
-      "description": "Responsibilities: We are looking for a DevOps Engineer with deep expertise in CI/CD automation, end‑to‑end workflow ownership, and GitHub Actions. You will design, standardize, and operate automated delivery pipelines that enable development teams to ship high‑quality software rapidly and reliably. The role requires strong ownership of workflows, proactive improvement of DevOps processes, and close collaboration with developers, architects, and product teams. Qualifications: CI/CD Automation, Wo",
-      "recruiter": {
-        "name": "Senthil Kumar",
-        "email": "senthil.kumar@careernet.in"
-      }
-    },
-    {
-      "job_id": "138877",
-      "title": "GDB/DG - Platform Engineer (M/F/D)",
-      "url": "https://basf.jobs/job-invite/138877/?locale=en_US",
+      "job_id": "138876",
+      "title": "GDB/DG - Cloud System Engiineer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138876/?locale=en_US",
       "city": "Hyderabad",
       "state": "Andhra Pradesh",
       "country": "India",
@@ -1737,9 +1674,30 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T18:30:00Z",
-      "description": "Responsibilities: We are seeking a highly skilled Platform Engineer with deep expertise in CDKTF, Azure PaaS, and Python to design, automate, and operate platform capabilities that enable development teams across BASF to build and deploy applications efficiently and securely. Your work will contribute to BASF’s internal developer platform ecosystem — designing scalable platform components, codifying cloud infrastructure, and building reusable modules and tooling that empower engineering teams. Q",
+      "description": "Cloud System Engiineer OrgCode: GDB/DG Product Team: Click or tap here to enter text. Responsibilities: We are looking for a Senior Cloud Systems Engineer with strong experience in module development, Azure PaaS, and Python. You will build and maintain core cloud platform capabilities, automate infrastructure and service provisioning, and support teams consuming Azure PaaS services. Qualifications: Module Development, Azure Paas, Python Bachelor’s degree in Computer Science, Information Systems,",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138879",
+      "title": "GDB/ZI - API Management Specialist (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138879/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/ZI",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": true,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "Objectives You will be responsible for the technical design and implementation of API-Proxies while ensuring compliance with all relevant BASF development guidelines. Beyond that you will support respective testing and error correction activities. You create and further develop concepts for operation topics and implement them in our team. Implement automation for our API-Management by using the management APIs of the related software components. Consulting of projects on the setup of integration",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -1761,6 +1719,48 @@
       "hybrid": false,
       "date_posted": "2026-05-22T18:30:00Z",
       "description": "Objectives Our product Integration Platform enables the stable, transparent, and governed operation of enterprise integrations across BASF. The Service Engineer / Owner ensures business continuity and operational excellence of the integration landscape. In this role, you ensure reliable operation of the Integration Platform and its underlying runtimes (including SAP Integration technologies). You support developers, operations teams, partners, and architects in day to day platform usage and evol",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138878",
+      "title": "GDB/DG - DevOps Engineer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138878/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/DG",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": true,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "DevOps Engineer OrgCode: GDB/DG Product Team: Click or tap here to enter text. Responsibilities: We are looking for a DevOps Engineer with deep expertise in CI/CD automation, end‑to‑end workflow ownership, and GitHub Actions. You will design, standardize, and operate automated delivery pipelines that enable development teams to ship high‑quality software rapidly and reliably. The role requires strong ownership of workflows, proactive improvement of DevOps processes, and close collaboration with ",
+      "recruiter": {
+        "name": "Senthil Kumar",
+        "email": "senthil.kumar@careernet.in"
+      }
+    },
+    {
+      "job_id": "138877",
+      "title": "GDB/DG - Platform Engineer (M/F/D)",
+      "url": "https://basf.jobs/job-invite/138877/?locale=en_US",
+      "city": "Hyderabad",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "company": "BASF Digital Solutions Private Limited",
+      "business_unit": "Asia Pacific",
+      "department": "GDB/DG Data Science Platform",
+      "job_field": "Digitalization",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": true,
+      "date_posted": "2026-05-22T18:30:00Z",
+      "description": "Platform Engineer OrgCode: GDB/DG Product Team: Click or tap here to enter text. Responsibilities: We are seeking a highly skilled Platform Engineer with deep expertise in CDKTF, Azure PaaS, and Python to design, automate, and operate platform capabilities that enable development teams across BASF to build and deploy applications efficiently and securely. Your work will contribute to BASF’s internal developer platform ecosystem — designing scalable platform components, codifying cloud infrastruc",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -1800,9 +1800,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T18:10:42Z",
-      "description": "Responsibilities: We are looking for a highly skilled Senior Platform Engineer with deep expertise in Python, Terraform CDK (CDKTF), and Azure PaaS services to join our platform engineering organization. You will design, build, and optimize platform components that enable development teams to ship secure, scalable, and reliable applications. Qualifications: Python, CDKTF, Azure Paas Bachelor’s degree in Computer Science, Information Systems, or a related field. Minimum of 6 years of experience a",
+      "description": "Senior Platform Engineer OrgCode: GDB/DG Product Team: Click or tap here to enter text. Responsibilities: We are looking for a highly skilled Senior Platform Engineer with deep expertise in Python, Terraform CDK (CDKTF), and Azure PaaS services to join our platform engineering organization. You will design, build, and optimize platform components that enable development teams to ship secure, scalable, and reliable applications. Qualifications: Python, CDKTF, Azure Paas Bachelor’s degree in Compu",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -1821,9 +1821,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T17:56:28Z",
-      "description": "Role main activities. What is expected from you? We are looking for a seasoned SAP Transportation Management (TM) Functional Consultant with deep expertise in S/4HANA TM, a solid understanding of end-to-end supply chain logistics, and proven delivery experience in the chemical industry. The successful candidate will lead the design, configuration, drive cross-functional alignment, act as a bridge between business stakeholders and technical teams and optimise our Yard Management solutions which h",
+      "description": "Yard Management – SAP TM Functional Consultant Role main activities. What is expected from you? We are looking for a seasoned SAP Transportation Management (TM) Functional Consultant with deep expertise in S/4HANA TM, a solid understanding of end-to-end supply chain logistics, and proven delivery experience in the chemical industry. The successful candidate will lead the design, configuration, drive cross-functional alignment, act as a bridge between business stakeholders and technical teams and",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -1863,9 +1863,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T17:45:59Z",
-      "description": "Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you will",
+      "description": "SAP Consultant OrgCode: GDE/D Product Team: Click or tap here to enter text. Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of n",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -1884,7 +1884,7 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T17:44:44Z",
       "description": "Role Description The Digitalization Specialist supports the design, implementation, and operation of eDocument and Statutory Reporting solutions across multiple countries and systems. The role ensures compliance with local tax regulations, stable system integrations, and close coordination between business, IT, and external vendors. This position plays a key role in global and country-specific rollouts, incident resolution, and continuous improvement of SAP ECC and S/4HANA finance and compliance",
       "recruiter": {
@@ -1905,9 +1905,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T17:16:06Z",
-      "description": "Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you will",
+      "description": "SAP Consultant OrgCode: GDE/D Product Team: Click or tap here to enter text. Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of n",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -1926,7 +1926,7 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T17:04:55Z",
       "description": "Key Responsibilities • Consult European HR and payroll stakeholders on SAP Payroll European (Spain, Belgium) requirements • Design and implement Europe specific payroll schemas, rules, and calculations • Customize SAP Payroll and develop enhancements using ABAP / ABAP OO • Ensure solution quality via testing, payroll validation, and production support • Work in an Agile / DevOps setup within a global HR Solutions product team • Support S/4HANA Payroll evolution and automation initiatives _______",
       "recruiter": {
@@ -1947,9 +1947,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T16:53:38Z",
-      "description": "Responsibilities: \"You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you wil",
+      "description": "SAP Consultant OrgCode: tbc Product Team: Business Partner Finance Master Data Responsibilities: \"You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing o",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -1968,9 +1968,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T14:27:49Z",
-      "description": "Responsibilities: • Design, develop, operate, and maintain applications, platforms, and infrastructure systems to support BASF’s digital transformation • Steer platform delivery by providers, including request fulfillment, escalation management, and controls platform operations (ensuring SLA adherence) • Ensure operational security and compliance of platforms, troubleshooting and resolving platform issues as needed • Optimize efficiency, performance, and implement cost-effective solutions, focus",
+      "description": "Platform Engineer – Job Grade OrgCode: GDE/AE Product Team: Responsibilities: • Design, develop, operate, and maintain applications, platforms, and infrastructure systems to support BASF’s digital transformation • Steer platform delivery by providers, including request fulfillment, escalation management, and controls platform operations (ensuring SLA adherence) • Ensure operational security and compliance of platforms, troubleshooting and resolving platform issues as needed • Optimize efficiency",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -1989,9 +1989,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T14:16:00Z",
-      "description": "Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you will",
+      "description": "SAP Consultant OrgCode: GDE/D Product Team: Click or tap here to enter text. Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of n",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -2031,9 +2031,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T12:36:54Z",
-      "description": "Responsibilities: • Assess Business Requirements: Collaborate with stakeholders to understand and analyze warehouse management needs and translate them into effective SAP solutions. • Solution Design and Configuration: Design, configure, and implement SAP Warehouse Management (WM) and Extended Warehouse Management (EWM) solutions to streamline inventory management processes and enhance system performance. • Integration: Ensure seamless integration with other SAP modules (e.g., MM, PP, QM) and no",
+      "description": "Specialist Warehouse Management OrgCode: GDD/GC Product Team: Extended Warehouse Management Responsibilities: • Assess Business Requirements: Collaborate with stakeholders to understand and analyze warehouse management needs and translate them into effective SAP solutions. • Solution Design and Configuration: Design, configure, and implement SAP Warehouse Management (WM) and Extended Warehouse Management (EWM) solutions to streamline inventory management processes and enhance system performance.",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -2052,9 +2052,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T11:55:30Z",
-      "description": "Main Tasks: • Ensuring Compliance with Security and Regulatory Requirements: Monitor and assess adherence to legal, regulatory, and internal requirements in information security and data protection. • Conducting Audits and Assessments: Plan, coordinate, and execute internal and external audits as well as risk and compliance assessments to identify vulnerabilities and areas for improvement. • Consulting and Training: Support and raise awareness among business units and employees on compliance and",
+      "description": "Job Description: Cyber Security Compliance and Assurance Manager Main Tasks: • Ensuring Compliance with Security and Regulatory Requirements: Monitor and assess adherence to legal, regulatory, and internal requirements in information security and data protection. • Conducting Audits and Assessments: Plan, coordinate, and execute internal and external audits as well as risk and compliance assessments to identify vulnerabilities and areas for improvement. • Consulting and Training: Support and rai",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -2094,9 +2094,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T11:33:41Z",
-      "description": "Key Responsibilities and Main Tasks • Conduct cost analysis, monitoring, reporting, and budgeting for your assigned business area. • Liaise with the Finance Manager of the company. • Provide actionable insights and recommendations to drive the future development of your business area within the BASF Group. • Deliver reliable financial information to support management decision-making and strategic planning. • Gain a comprehensive understanding of global accounting and charging mechanisms. • Lead",
+      "description": "Job Description Job Title: Segment / Product Family / Product Controller (Senior Controlling Specialist) Location: Hyderabad, India Position Type: Full-time, Individual Contributor, part of a collaborative local team Role Overview We are excited to announce the establishment of our Global Capability Center (GCC) in Hyderabad, supporting our company’s digital transformation journey. We are looking for experienced and motivated Controlling Professionals to join our team and play a key role in supp",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -2115,9 +2115,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T06:38:07Z",
-      "description": "Responsibilities: `We are establishing a Global Capability Center (GCC) in Hyderabad to support our company’s digitalization initiatives. As part of this strategic expansion, we seek a highly skilled and experienced Finance, Controlling Tax Manager to manage all financial operations, statutory compliance, and tax-related matters for the GCC. This is a critical role requiring a self-driven professional who can independently handle end-to-end finance and compliance responsibilities. Key Responsibi",
+      "description": "Finance Manager Responsibilities: `We are establishing a Global Capability Center (GCC) in Hyderabad to support our company’s digitalization initiatives. As part of this strategic expansion, we seek a highly skilled and experienced Finance, Controlling Tax Manager to manage all financial operations, statutory compliance, and tax-related matters for the GCC. This is a critical role requiring a self-driven professional who can independently handle end-to-end finance and compliance responsibilities",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -2220,9 +2220,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-21T18:02:09Z",
-      "description": "Main Tasks / Scope of Work Consulting tasks  Consults the BPI team in technical application questions during the solution design and functional specification phase  Provides effort estimation for realization and contributes to project planning  Creates Technical Design Document supported by the Business  Performs configuration and development in systems (e.g. customizing in SAP and / or KAFKA and SAP HANA DB, or in technology stack e.g. java)  Manages development activities (internal and ex",
+      "description": "Objectives Describe your Product mission here (2 - 3 sentences only) BASF’s Business Process Integration (BPI) team provides and supports digital solutions for B2B integrations with external partners through a variety of systems and processes within the BASF’s architectural landscape. BPI is considered a strategic tool to digitalize processes and enable seamless exchange of data between applications, businesses, customers and partners in real-time. Describe the objectives of the role here (2 - 3",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -2283,9 +2283,9 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-21T10:11:52Z",
-      "description": "Main Tasks / Scope of Work The Solution Consultant provides customized integration solutions for internal partners and external partners via EDI, API, Micro Services, AI Agents, and similar technologies. The Solution Consultant supports our internal (SAP ERP and Satellite Systems) and external partners to specify their requirements and translates those into best-in-class solution designs based on technical and business process knowledge, aligned with process design and architecture. The consulta",
+      "description": "Objectives Describe your Product mission here (2 - 3 sentences only) BASF’s Business Process Integration (BPI) team provides and supports digital solutions for B2B integrations with external partners through a variety of systems and processes within the BASF’s architectural landscape. BPI is considered a strategic tool to digitalize processes and enable seamless exchange of data between applications, businesses, customers and partners in real-time. Describe the objectives of the role here (2 - 3",
       "recruiter": {
         "name": "Senthil Kumar",
         "email": "senthil.kumar@careernet.in"
@@ -2346,7 +2346,7 @@
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-20T18:30:00Z",
       "description": "Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you will",
       "recruiter": {
@@ -2390,7 +2390,7 @@
       "job_type": "Permanent",
       "hybrid": true,
       "date_posted": "2026-05-20T18:30:00Z",
-      "description": "Responsibilities: You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you will",
+      "description": "Responsibilities: \"You will be responsible for ensuring the operation and project delivery across all phases you will execute business requirements engineering and ensure provisioning of standard IT features - You will do error analysis and corrections of Incident and Problems (Provide 2nd and/or 3rd level support). - As part of our agile development team you will work on user stories, do the development and testing of new features. - With your extensive experience on the subject matter, you wil",
       "recruiter": {
         "name": "Santhosh Kumar SG",
         "email": "santhosh.2183711@infosys.com"
@@ -2453,7 +2453,7 @@
       "job_type": "Permanent",
       "hybrid": true,
       "date_posted": "2026-05-19T17:51:26Z",
-      "description": "Main tasks • As a test automation engineer for the Operational EHS Platform and Integration team, you will be part of a global, multidisciplinary team responsible for the development of an internal platform for daily use globally at BASF production facilities. • You will develop programs that will test the accuracy and reliability of internally developed software solutions for each module during its initial development and on an ongoing basis, especially in advance of major updates/deployments. ",
+      "description": "Header Do not change / Filled by Hub Digital Hub Hyderabad attracts, grows, and develops passionate people who will meaningfully impact the digital future of BASF. Come join us and be a part of our digitalization journey. Objective of the position We are looking for a highly dynamic, motivated, and collaborative person to join our team. We are focused on the modernization of legacy systems and development of new capabilities of digital solutions in the Operational EHS domain. There is a growing ",
       "recruiter": {
         "name": "Santhosh Kumar SG",
         "email": "santhosh.2183711@infosys.com"
@@ -2495,7 +2495,7 @@
       "job_type": "Permanent",
       "hybrid": true,
       "date_posted": "2026-05-19T10:35:38Z",
-      "description": "Objective: We are looking for a highly dynamic, motivated, and collaborative person to join our team. We are focused on the modernization of legacy systems and development of new capabilities of digital solutions in the Operations Platform team. There is a growing global need within BASF to leverage digitalization to continue BASF's journey of excellence and continuously improving our capabilities especially through digitalization. In this role, you will work alongside a global development team ",
+      "description": "Objective of the position We are looking for a highly dynamic, motivated, and collaborative person to join our team. We are focused on the modernization of legacy systems and development of new capabilities of digital solutions in the Operations Platform team. There is a growing global need within BASF to leverage digitalization to continue BASF’s journey of excellence and continuously improving our capabilities especially through digitalization. In this role, you will work alongside a global de",
       "recruiter": {
         "name": "Santhosh Kumar SG",
         "email": "santhosh.2183711@infosys.com"
@@ -2558,7 +2558,7 @@
       "job_type": "Permanent",
       "hybrid": true,
       "date_posted": "2026-05-19T06:55:09Z",
-      "description": "Main tasks Drive and own the further development of the data product layer of our Enterprise Datalake to meet both user and internal needs. Align with local and global stakeholders to ensure the platform's scalability, reliability and security Together with your team ensure high quality of the services you are responsible for and initiate improvement measures as well as functionality Stay abreast of the newest technologies and trends in the big data and data mesh domain Act as the point of conta",
+      "description": "Objective of the position Describe your Product Mission here / objective of the role. At our unit “Data Foundation - Big Data Management” we aim to offer organizations a robust and scalable solution for managing and deriving insights from vast quantities of data. By utilizing Azure's PaaS components, our platform streamlines the deployment and handling of Big Data workloads, empowering our clients to make data-driven decisions and propel business expansion. Our team is accountable for the creati",
       "recruiter": {
         "name": "Santhosh Kumar SG",
         "email": "santhosh.2183711@infosys.com"
@@ -2579,7 +2579,7 @@
       "job_type": "Permanent",
       "hybrid": true,
       "date_posted": "2026-05-19T06:55:06Z",
-      "description": "Main tasks • Develop, extend and optimize the data product layer of our Enterprise Datalake with high code standards, tests and suitable documentation to meet both user and internal needs. • Collaborate with the product owner and architect to understand data requirements and provide suitable solutions. • Troubleshoot data and software related issues and optimize pipelines for performance and scalability. • Work with Azure Databricks, Azure Data Factory/Synapse keeping up to date with the latest ",
+      "description": "Objective of the position Describe your Product Mission here / objective of the role. At our unit “Data Foundation - Big Data Management” we aim to offer organizations a robust and scalable solution for managing and deriving insights from vast quantities of data. By utilizing Azure's PaaS components, our platform streamlines the deployment and handling of Big Data workloads, empowering our clients to make data-driven decisions and propel business expansion. Our team is accountable for the creati",
       "recruiter": {
         "name": "Santhosh Kumar SG",
         "email": "santhosh.2183711@infosys.com"
@@ -2600,7 +2600,7 @@
       "job_type": "Permanent",
       "hybrid": true,
       "date_posted": "2026-05-19T06:50:21Z",
-      "description": "Education ▪ Bachelor's degree in computer science, Information Technology, Engineering, Business, or related fields. Work experience ▪ Minimum 7-8 years related working experience as a Dataengineer using Azure, Databricks, Python, Azure Data Factory or Synapse Technical Professional Knowledge (mandatory) ▪ Experience in Agile way of working with a DevOps mindset ▪ In-depth know how with Lakehouse concepts, Databricks and Unity Catalog. ▪ Strong data engineering and development skills to maintain",
+      "description": "Objective of the position Describe your Product Mission here / objective of the role. At our unit “Data Foundation - Big Data Management” we aim to offer organizations a robust and scalable solution for managing and deriving insights from vast quantities of data. By utilizing Azure's PaaS components, our platform streamlines the deployment and handling of Big Data workloads, empowering our clients to make data-driven decisions and propel business expansion. Our team is accountable for the creati",
       "recruiter": {
         "name": "Santhosh Kumar SG",
         "email": "santhosh.2183711@infosys.com"
