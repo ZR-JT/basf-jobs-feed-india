@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-04T21:24:09Z",
+  "last_updated": "2026-06-05T08:00:03Z",
   "total_active": 158,
   "jobs": [
     {
@@ -1773,13 +1773,13 @@
       "city": "Hyderabad",
       "state": "Andhra Pradesh",
       "country": "India",
-      "company": "BASF Digital Solutions Private Limited",
+      "company": "BASF Global Business Services Private Limited",
       "business_unit": "Asia Pacific",
       "department": "GDB/ZI Integration & Data Strategy",
       "job_field": "Digitalization",
       "job_level": "Professional",
       "job_type": "Permanent",
-      "hybrid": false,
+      "hybrid": true,
       "date_posted": "2026-05-22T18:30:00Z",
       "description": "Objectives Describe your Product mission here (2 - 3 sentences only) Join our “Data Foundation” team and work on the cutting-edge “Integration” product that leverages innovative technologies to seamlessly connect applications and facilitate data exchange. The Integration Platform is a versatile framework for building and executing integration scenarios—serving both internal and external needs. With the platform and its underlying technologies, you’ll have access to advanced tools and processes d",
       "recruiter": {
