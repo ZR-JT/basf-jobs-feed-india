@@ -1,7 +1,50 @@
 {
-  "last_updated": "2026-06-08T02:42:03Z",
-  "total_active": 156,
+  "last_updated": "2026-06-08T08:45:54Z",
+  "total_active": 157,
   "jobs": [
+    {
+      "job_id": "139411",
+      "title": "Assistant Chemist",
+      "url": "https://basf.jobs/job-invite/139411/?locale=en_US",
+      "city": "Navi Mumbai - HO (Innovation Campus)",
+      "state": "Maharashtra",
+      "country": "India",
+      "company": "BASF India Limited",
+      "business_unit": "Asia Pacific",
+      "department": "A-EDA/MAA",
+      "job_field": "Research & Development",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-06-08T06:06:55Z",
+      "description": "Objectives of the position: Conduct experimental and theoretical research assignments under the guidance of research scientists. Support innovation processes and scientific work, contributing to continuous improvement in lab operations Main Areas of Responsibilities: Independently perform routine polymer synthesis and analytical tasks using standard techniques, procedures, and equipment. Summarize and document results in electronic lab journals; prepare technical reports. Interpret results and s",
+      "recruiter": {
+        "name": "Deepashri Nair",
+        "email": "deepashri.nair@basf.com",
+        "phone": "+910226791-7499"
+      }
+    },
+    {
+      "job_id": "139244",
+      "title": "Sales Manager, Rigids PU - Performance Materials",
+      "url": "https://basf.jobs/job-invite/139244/?locale=en_US",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "company": "BASF India Limited",
+      "business_unit": "Asia Pacific",
+      "department": "A-PMA",
+      "job_field": "Marketing & Sales",
+      "job_level": "Professional",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-06-08T04:18:14Z",
+      "description": "Objectives of the Position Sales: To plan and direct sales and marketing activities in a specific Zone (major geographic area)/ construction segment in order to achieve agreed sales volume, pricing, margins and selling cost objectives by implementing consistently the overall sales strategy, using technical, organizational and customer knowledge. To ensure timely payment of receivables from customers In addition, provide inputs and participate in the marketing, market planning and technical devel",
+      "recruiter": {
+        "name": "Sejal Sandeep Singh",
+        "email": "sejal.sandeep-singh@partners.basf.com"
+      }
+    },
     {
       "job_id": "139331",
       "title": "GB/G Head of HR Services",
@@ -2835,27 +2878,6 @@
       "recruiter": {
         "name": "Barkha Dawra",
         "email": "barkha.dawra@partners.basf.com"
-      }
-    },
-    {
-      "job_id": "122575",
-      "title": "Specialist SCM Process Management - Materials Management and Warehouse Management",
-      "url": "https://basf.jobs/job-invite/122575/?locale=en_US",
-      "city": "Godrej One - Mumbai",
-      "state": "Maharashtra",
-      "country": "India",
-      "company": "BASF India Limited",
-      "business_unit": "Asia Pacific",
-      "department": "G-PM/ASI",
-      "job_field": "Logistics & Supply Chain Management",
-      "job_level": "Professional",
-      "job_type": "Permanent",
-      "hybrid": false,
-      "date_posted": "2026-03-18T07:18:27Z",
-      "description": "Objectives of the Position: We are looking for a Specialist SCM Process Management – Materials Management and Warehouse Management to support the global business. In this role, you will act as a process expert for SAP MM and WM, driving global process optimization, supporting operations, and ensuring harmonized, efficient supply chain execution across regions. Main Areas of Responsibilities and Key Activities: Support, analyze, optimize, and harmonize Materials Management (MM) and Warehouse Mana",
-      "recruiter": {
-        "name": "Sejal Sandeep Singh",
-        "email": "sejal.sandeep-singh@partners.basf.com"
       }
     },
     {
