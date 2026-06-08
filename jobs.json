@@ -1,7 +1,49 @@
 {
-  "last_updated": "2026-06-08T08:45:54Z",
-  "total_active": 157,
+  "last_updated": "2026-06-08T15:30:14Z",
+  "total_active": 159,
   "jobs": [
+    {
+      "job_id": "139489",
+      "title": "Assistant Research Scientist I",
+      "url": "https://basf.jobs/job-invite/139489/?locale=en_US",
+      "city": "Navi Mumbai - HO (Innovation Campus)",
+      "state": "Maharashtra",
+      "country": "India",
+      "company": "BASF Chemicals India Pvt. Ltd.",
+      "business_unit": "Asia Pacific",
+      "department": "APR R&D Crop Protection",
+      "job_field": "Research & Development",
+      "job_level": "Graduate",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-06-08T11:16:35Z",
+      "description": "Objectives of the position: Conduct Physchem samples Analysis – LogP, Thermodynamic water solubility, hydrolytic stability at 3 different pH, Photlytic stability and Photohydrolytic stability Representative Main tasks: Handling of UPLC, HPLC, Photochamber and pH meter Physchem LogP, Thermodynamic water solubility, hydrolytic stability at 3 different pH, Photlytic stability and Photohydrolytic stability EHS Task: Reporting of Near miss and Unsafe behavior as an observant while working in lab Main",
+      "recruiter": {
+        "name": "Anishka Naik",
+        "email": "anishka.naik@basf.com"
+      }
+    },
+    {
+      "job_id": "139468",
+      "title": "Assistant Research Scientist I",
+      "url": "https://basf.jobs/job-invite/139468/?locale=en_US",
+      "city": "Navi Mumbai - HO (Innovation Campus)",
+      "state": "Maharashtra",
+      "country": "India",
+      "company": "BASF Chemicals India Pvt. Ltd.",
+      "business_unit": "Asia Pacific",
+      "department": "APR R&D Crop Protection",
+      "job_field": "Research & Development",
+      "job_level": "Graduate",
+      "job_type": "Permanent",
+      "hybrid": false,
+      "date_posted": "2026-06-08T10:20:08Z",
+      "description": "Objectives of the position: Support to Physchem samples Analysis. Representative Main tasks: Handling of LCMS, UPLC HPLC LCMS (Waters Shimadzu): Ontime and Accurate LCMS analysis service support, solving queries for Discovery team. Managing (maintenance and troubleshooting of LCMS instrument.) EHS Task: Reporting of Near miss and Unsafe behavior as an observant while working in lab. Maintain zero lost time incidences by working safe. Working in the lab with all required PPEs and following safety",
+      "recruiter": {
+        "name": "Anishka Naik",
+        "email": "anishka.naik@basf.com"
+      }
+    },
     {
       "job_id": "139411",
       "title": "Assistant Chemist",
