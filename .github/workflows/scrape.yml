@@ -22,7 +22,7 @@ jobs:
 
       - name: Abhaengigkeiten installieren
         run: |
-          pip install playwright aiohttp
+          pip install playwright
           playwright install chromium
           playwright install-deps chromium
 
