@@ -30,7 +30,6 @@ def slugify(text):
 
 
 def extract_batch(data):
-    """Try all known SuccessFactors field names for the jobs array."""
     for key in ("jobs", "jobPostings", "jobResults", "requisitions", "results", "data"):
         val = data.get(key)
         if val and isinstance(val, list):
@@ -46,32 +45,6 @@ def extract_total(data):
     return None
 
 
-async def post_jobs(page, body):
-    """POST to SF endpoint from within the browser context."""
-    return await page.evaluate(
-        """async ([endpoint, body]) => {
-            try {
-                const resp = await fetch(endpoint, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-CSRF-Token': window.CSRFToken || ''
-                    },
-                    body: JSON.stringify(body)
-                });
-                if (!resp.ok) {
-                    const txt = await resp.text();
-                    return { __error: `HTTP ${resp.status}`, __body: txt.slice(0, 500) };
-                }
-                return await resp.json();
-            } catch (e) {
-                return { __error: String(e) };
-            }
-        }""",
-        [SF_ENDPOINT, body]
-    )
-
-
 async def scrape_jobs():
     all_raw_jobs = []
 
@@ -80,23 +53,30 @@ async def scrape_jobs():
         context = await browser.new_context()
         page = await context.new_page()
 
-        # ── Intercept the first SF response to learn the real schema ─────────
-        intercepted_schema = {}
+        # ── Phase 1: Lade die Seite, fange die echte React-App-Request ab ────
+        # Die React-App macht beim Laden automatisch einen POST an SF_ENDPOINT.
+        # Wir routen diesen Request durch, kopieren Antwort und Request-Body.
+        captured = {}
 
-        async def on_response(response):
-            if SF_ENDPOINT in response.url and response.request.method == "POST" and not intercepted_schema:
+        async def handle_route(route):
+            request = route.request
+            if SF_ENDPOINT in request.url and request.method == "POST" and "req_body" not in captured:
                 try:
-                    data = await response.json()
-                    intercepted_schema["keys"] = list(data.keys())
-                    batch, key = extract_batch(data)
-                    intercepted_schema["batch_key"] = key
-                    intercepted_schema["sample_job_keys"] = list(batch[0].keys()) if batch else []
-                    req_raw = await response.request.body()
-                    intercepted_schema["req_body"] = json.loads(req_raw) if req_raw else {}
-                except Exception as e:
-                    intercepted_schema["error"] = str(e)
+                    raw = request.post_data
+                    captured["req_body"] = json.loads(raw) if raw else {}
+                except Exception:
+                    captured["req_body"] = {}
+            await route.continue_()
 
-        page.on("response", on_response)
+        async def handle_response(response):
+            if SF_ENDPOINT in response.url and response.request.method == "POST" and "resp_data" not in captured:
+                try:
+                    captured["resp_data"] = await response.json()
+                except Exception as e:
+                    captured["resp_error"] = str(e)
+
+        await page.route(f"**{SF_ENDPOINT}", handle_route)
+        page.on("response", handle_response)
 
         print("Lade basf.jobs/search ...")
         await page.goto(
@@ -106,105 +86,140 @@ async def scrape_jobs():
         )
         await page.wait_for_timeout(3000)
 
-        csrf_token = await page.evaluate("window.CSRFToken")
-        print(f"CSRF Token: {'gefunden' if csrf_token else 'NICHT gefunden'}")
+        req_body_template = captured.get("req_body", {})
+        first_resp = captured.get("resp_data", {})
 
-        if intercepted_schema:
-            print(f"[schema] Response-Keys: {intercepted_schema.get('keys')}")
-            print(f"[schema] Batch-Key: {intercepted_schema.get('batch_key')}")
-            print(f"[schema] Job-Keys (erste 10): {intercepted_schema.get('sample_job_keys', [])[:10]}")
-            print(f"[schema] Request-Body: {json.dumps(intercepted_schema.get('req_body', {}))[:200]}")
-        else:
-            print("[schema] Kein SF-Request beim Seitenload abgefangen")
+        print(f"[intercept] Request-Body: {json.dumps(req_body_template)[:300]}")
+        print(f"[intercept] Response-Keys: {list(first_resp.keys())}")
 
-        # ── India-Filter: zwei Varianten, erste die funktioniert wird genommen ─
+        batch0, batch_key = extract_batch(first_resp)
+        total_reported = extract_total(first_resp)
+        print(f"[intercept] Batch-Key='{batch_key}' | total={total_reported} | jobs={len(batch0)}")
+        if batch0:
+            print(f"[intercept] Job-Keys (Sample): {list(batch0[0].keys())[:12]}")
+
+        # ── Phase 2: India-Request mit exakt dem gleichen Body-Format ─────────
+        # Wir nehmen den abgefangenen Request-Body als Template und setzen
+        # den India-Filter (mehrere Varianten bis eine Ergebnisse liefert).
+        base_body = {**req_body_template, "pageNumber": 0, "sortBy": "date"}
+
         INDIA_FILTERS = [
-            {"location": "India", "facetFilters": {}},
-            {"location": "", "facetFilters": {"country": ["India"]}},
-            {"location": "", "facetFilters": {"addressCountry": ["India"]}},
-            {"location": "India", "facetFilters": {"country": ["India"]}},
+            {"facetFilters": {"country": ["India"]}, "location": ""},
+            {"facetFilters": {"addressCountry": ["India"]}, "location": ""},
+            {"facetFilters": {}, "location": "India"},
+            {"facetFilters": {"country": ["India"]}, "location": "India"},
         ]
-
-        base_body = {
-            "locale": "en_US",
-            "sortBy": "date",
-            "keywords": "",
-            "brand": "",
-            "skills": [],
-            "categoryId": 0,
-            "pageNumber": 0,
-        }
 
         working_filter = None
         first_data = None
 
         for india_filter in INDIA_FILTERS:
-            test_body = {**base_body, **india_filter, "pageNumber": 0}
-            print(f"  Teste Filter: {india_filter} ...")
-            data = await post_jobs(page, test_body)
+            body = {**base_body, **india_filter, "pageNumber": 0}
+            print(f"  Teste Filter {india_filter} ...")
+            data = await page.evaluate(
+                """async ([endpoint, body]) => {
+                    try {
+                        const r = await fetch(endpoint, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json',
+                                       'X-CSRF-Token': window.CSRFToken || '' },
+                            body: JSON.stringify(body)
+                        });
+                        if (!r.ok) return { __error: `HTTP ${r.status}`, __body: (await r.text()).slice(0, 400) };
+                        return await r.json();
+                    } catch(e) { return { __error: String(e) }; }
+                }""",
+                [SF_ENDPOINT, body]
+            )
             if "__error" in data:
-                print(f"  ❌ {data['__error']} | {data.get('__body', '')[:150]}")
+                print(f"  ❌ {data['__error']} | {data.get('__body','')[:200]}")
                 continue
-            batch, batch_key = extract_batch(data)
+            batch, key = extract_batch(data)
             total = extract_total(data)
-            print(f"  → Response-Keys: {list(data.keys())} | batch_key={batch_key} | total={total} | batch={len(batch)}")
+            print(f"  → Keys={list(data.keys())} batch_key={key} total={total} jobs={len(batch)}")
             if batch:
                 working_filter = india_filter
                 first_data = data
-                print(f"  ✅ Filter funktioniert: {india_filter}")
+                print(f"  ✅ Funktioniert: {india_filter}")
                 break
 
+        # ── Phase 3: Fallback — alle Jobs laden, Python-seitig filtern ────────
         if working_filter is None:
-            print("❌ Kein India-Filter liefert Ergebnisse. Rohdaten aus Seitenload nutzen ...")
-            # Fallback: use whatever the page loaded initially (no India filter),
-            # we'll filter for India in Python
-            working_filter = {"location": "", "facetFilters": {}}
-            test_body = {**base_body, **working_filter, "pageNumber": 0}
-            first_data = await post_jobs(page, test_body)
+            print("⚠️  Kein India-Filter funktioniert → lade alle Jobs, filtere Python-seitig")
+            working_filter = {"facetFilters": {}, "location": ""}
+            body = {**base_body, **working_filter, "pageNumber": 0}
+            first_data = await page.evaluate(
+                """async ([endpoint, body]) => {
+                    try {
+                        const r = await fetch(endpoint, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json',
+                                       'X-CSRF-Token': window.CSRFToken || '' },
+                            body: JSON.stringify(body)
+                        });
+                        if (!r.ok) return { __error: `HTTP ${r.status}`, __body: (await r.text()).slice(0, 400) };
+                        return await r.json();
+                    } catch(e) { return { __error: String(e) }; }
+                }""",
+                [SF_ENDPOINT, body]
+            )
             if "__error" in first_data:
-                print(f"❌ Auch Fallback schlägt fehl: {first_data['__error']}")
+                print(f"❌ Fallback fehlgeschlagen: {first_data['__error']}")
                 await browser.close()
                 return
 
         batch, batch_key = extract_batch(first_data)
         total_reported = extract_total(first_data)
         all_raw_jobs.extend(batch)
-        print(f"Seite 0: {len(batch)} Jobs | Gesamt laut API: {total_reported}")
+        detected_page_size = len(batch) if batch else 20
+        print(f"Seite 0: {len(batch)} Jobs | API-Total: {total_reported}")
 
-        if batch:
-            detected_page_size = len(batch)
-            page_number = 1
-            while True:
-                if isinstance(total_reported, int) and len(all_raw_jobs) >= total_reported:
-                    break
-                print(f"  Lade Seite {page_number} ...")
-                body = {**base_body, **working_filter, "pageNumber": page_number}
-                data = await post_jobs(page, body)
-                if "__error" in data:
-                    print(f"❌ Fehler Seite {page_number}: {data['__error']}")
-                    break
-                next_batch, _ = extract_batch(data)
-                if not next_batch:
-                    break
-                all_raw_jobs.extend(next_batch)
-                print(f"  Seite {page_number}: {len(next_batch)} Jobs (gesamt: {len(all_raw_jobs)})")
-                if len(next_batch) < detected_page_size:
-                    break
-                page_number += 1
+        page_number = 1
+        while batch and (not isinstance(total_reported, int) or len(all_raw_jobs) < total_reported):
+            print(f"  Lade Seite {page_number} ...")
+            body = {**base_body, **working_filter, "pageNumber": page_number}
+            data = await page.evaluate(
+                """async ([endpoint, body]) => {
+                    try {
+                        const r = await fetch(endpoint, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json',
+                                       'X-CSRF-Token': window.CSRFToken || '' },
+                            body: JSON.stringify(body)
+                        });
+                        if (!r.ok) return { __error: `HTTP ${r.status}` };
+                        return await r.json();
+                    } catch(e) { return { __error: String(e) }; }
+                }""",
+                [SF_ENDPOINT, body]
+            )
+            if "__error" in data:
+                print(f"❌ Fehler Seite {page_number}: {data['__error']}")
+                break
+            batch, _ = extract_batch(data)
+            if not batch:
+                break
+            all_raw_jobs.extend(batch)
+            print(f"  Seite {page_number}: {len(batch)} Jobs (gesamt: {len(all_raw_jobs)})")
+            if len(batch) < detected_page_size:
+                break
+            page_number += 1
 
         await browser.close()
 
-    print(f"Rohdaten: {len(all_raw_jobs)} Jobs")
+    print(f"Rohdaten gesamt: {len(all_raw_jobs)} Jobs")
 
-    # Fallback India-Filter auf Python-Seite (falls kein API-Filter gesetzt)
-    if working_filter == {"location": "", "facetFilters": {}}:
+    # Python-seitiger India-Filter (nur aktiv wenn Fallback genutzt wurde)
+    if working_filter == {"facetFilters": {}, "location": ""}:
         before = len(all_raw_jobs)
         all_raw_jobs = [
             j for j in all_raw_jobs
-            if "India" in str(j.get("country") or j.get("locationCountry") or
-                              j.get("primaryLocation") or j.get("addresses") or "")
+            if "India" in str(
+                j.get("country") or j.get("locationCountry") or
+                j.get("primaryLocation") or j.get("addresses") or ""
+            )
         ]
-        print(f"Python-seitig auf India gefiltert: {before} → {len(all_raw_jobs)}")
+        print(f"Python India-Filter: {before} → {len(all_raw_jobs)}")
 
     print(f"Rohdaten: {len(all_raw_jobs)} Jobs")
 
