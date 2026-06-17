@@ -29,10 +29,27 @@ def slugify(text):
     return text
 
 
-async def fetch_jobs_page(page, page_number):
-    """POST to /services/recruiting/v1/jobs from within the browser context."""
+def extract_batch(data):
+    """Try all known SuccessFactors field names for the jobs array."""
+    for key in ("jobs", "jobPostings", "jobResults", "requisitions", "results", "data"):
+        val = data.get(key)
+        if val and isinstance(val, list):
+            return val, key
+    return [], None
+
+
+def extract_total(data):
+    for key in ("total", "noOfJobs", "totalCount", "count", "totalJobs"):
+        val = data.get(key)
+        if isinstance(val, int):
+            return val
+    return None
+
+
+async def post_jobs(page, body):
+    """POST to SF endpoint from within the browser context."""
     return await page.evaluate(
-        """async ([endpoint, pageNumber]) => {
+        """async ([endpoint, body]) => {
             try {
                 const resp = await fetch(endpoint, {
                     method: 'POST',
@@ -40,28 +57,18 @@ async def fetch_jobs_page(page, page_number):
                         'Content-Type': 'application/json',
                         'X-CSRF-Token': window.CSRFToken || ''
                     },
-                    body: JSON.stringify({
-                        locale: 'en_US',
-                        pageNumber: pageNumber,
-                        sortBy: 'date',
-                        keywords: '',
-                        location: 'India',
-                        facetFilters: {},
-                        brand: '',
-                        skills: [],
-                        categoryId: 0
-                    })
+                    body: JSON.stringify(body)
                 });
                 if (!resp.ok) {
-                    const body = await resp.text();
-                    return { __error: `HTTP ${resp.status}: ${body.slice(0, 300)}` };
+                    const txt = await resp.text();
+                    return { __error: `HTTP ${resp.status}`, __body: txt.slice(0, 500) };
                 }
                 return await resp.json();
             } catch (e) {
                 return { __error: String(e) };
             }
         }""",
-        [SF_ENDPOINT, page_number]
+        [SF_ENDPOINT, body]
     )
 
 
@@ -73,70 +80,131 @@ async def scrape_jobs():
         context = await browser.new_context()
         page = await context.new_page()
 
+        # ── Intercept the first SF response to learn the real schema ─────────
+        intercepted_schema = {}
+
+        async def on_response(response):
+            if SF_ENDPOINT in response.url and response.request.method == "POST" and not intercepted_schema:
+                try:
+                    data = await response.json()
+                    intercepted_schema["keys"] = list(data.keys())
+                    batch, key = extract_batch(data)
+                    intercepted_schema["batch_key"] = key
+                    intercepted_schema["sample_job_keys"] = list(batch[0].keys()) if batch else []
+                    req_raw = await response.request.body()
+                    intercepted_schema["req_body"] = json.loads(req_raw) if req_raw else {}
+                except Exception as e:
+                    intercepted_schema["error"] = str(e)
+
+        page.on("response", on_response)
+
         print("Lade basf.jobs/search ...")
         await page.goto(
             "https://basf.jobs/search",
             timeout=60000,
-            wait_until="domcontentloaded"
+            wait_until="networkidle"
         )
-        await page.wait_for_timeout(4000)
+        await page.wait_for_timeout(3000)
 
         csrf_token = await page.evaluate("window.CSRFToken")
-        if not csrf_token:
-            print("❌ Kein CSRF Token gefunden!")
-            await browser.close()
-            return
-        print("✅ CSRF Token gefunden")
+        print(f"CSRF Token: {'gefunden' if csrf_token else 'NICHT gefunden'}")
 
-        page_number = 0
-        total_reported = None
-        detected_page_size = None
+        if intercepted_schema:
+            print(f"[schema] Response-Keys: {intercepted_schema.get('keys')}")
+            print(f"[schema] Batch-Key: {intercepted_schema.get('batch_key')}")
+            print(f"[schema] Job-Keys (erste 10): {intercepted_schema.get('sample_job_keys', [])[:10]}")
+            print(f"[schema] Request-Body: {json.dumps(intercepted_schema.get('req_body', {}))[:200]}")
+        else:
+            print("[schema] Kein SF-Request beim Seitenload abgefangen")
 
-        while True:
-            print(f"  Lade Seite {page_number} ...")
-            data = await fetch_jobs_page(page, page_number)
+        # ── India-Filter: zwei Varianten, erste die funktioniert wird genommen ─
+        INDIA_FILTERS = [
+            {"location": "India", "facetFilters": {}},
+            {"location": "", "facetFilters": {"country": ["India"]}},
+            {"location": "", "facetFilters": {"addressCountry": ["India"]}},
+            {"location": "India", "facetFilters": {"country": ["India"]}},
+        ]
 
+        base_body = {
+            "locale": "en_US",
+            "sortBy": "date",
+            "keywords": "",
+            "brand": "",
+            "skills": [],
+            "categoryId": 0,
+            "pageNumber": 0,
+        }
+
+        working_filter = None
+        first_data = None
+
+        for india_filter in INDIA_FILTERS:
+            test_body = {**base_body, **india_filter, "pageNumber": 0}
+            print(f"  Teste Filter: {india_filter} ...")
+            data = await post_jobs(page, test_body)
             if "__error" in data:
-                print(f"❌ Fehler auf Seite {page_number}: {data['__error']}")
+                print(f"  ❌ {data['__error']} | {data.get('__body', '')[:150]}")
+                continue
+            batch, batch_key = extract_batch(data)
+            total = extract_total(data)
+            print(f"  → Response-Keys: {list(data.keys())} | batch_key={batch_key} | total={total} | batch={len(batch)}")
+            if batch:
+                working_filter = india_filter
+                first_data = data
+                print(f"  ✅ Filter funktioniert: {india_filter}")
                 break
 
-            batch = (
-                data.get("jobs") or
-                data.get("jobResults") or
-                data.get("results") or
-                []
-            )
+        if working_filter is None:
+            print("❌ Kein India-Filter liefert Ergebnisse. Rohdaten aus Seitenload nutzen ...")
+            # Fallback: use whatever the page loaded initially (no India filter),
+            # we'll filter for India in Python
+            working_filter = {"location": "", "facetFilters": {}}
+            test_body = {**base_body, **working_filter, "pageNumber": 0}
+            first_data = await post_jobs(page, test_body)
+            if "__error" in first_data:
+                print(f"❌ Auch Fallback schlägt fehl: {first_data['__error']}")
+                await browser.close()
+                return
 
-            if page_number == 0:
-                total_reported = (
-                    data.get("total") or
-                    data.get("noOfJobs") or
-                    data.get("totalCount") or
-                    data.get("count")
-                )
-                print(f"  API meldet insgesamt: {total_reported} Jobs")
+        batch, batch_key = extract_batch(first_data)
+        total_reported = extract_total(first_data)
+        all_raw_jobs.extend(batch)
+        print(f"Seite 0: {len(batch)} Jobs | Gesamt laut API: {total_reported}")
 
-            if not batch:
-                print(f"  Keine Jobs auf Seite {page_number}, Abbruch.")
-                break
-
-            if detected_page_size is None:
-                detected_page_size = (
-                    data.get("pageSize") or
-                    data.get("resultsPerPage") or
-                    len(batch)
-                )
-
-            all_raw_jobs.extend(batch)
-            print(f"  Seite {page_number}: {len(batch)} Jobs (gesamt: {len(all_raw_jobs)})")
-
-            if isinstance(total_reported, int) and len(all_raw_jobs) >= total_reported:
-                break
-            if detected_page_size and len(batch) < detected_page_size:
-                break
-            page_number += 1
+        if batch:
+            detected_page_size = len(batch)
+            page_number = 1
+            while True:
+                if isinstance(total_reported, int) and len(all_raw_jobs) >= total_reported:
+                    break
+                print(f"  Lade Seite {page_number} ...")
+                body = {**base_body, **working_filter, "pageNumber": page_number}
+                data = await post_jobs(page, body)
+                if "__error" in data:
+                    print(f"❌ Fehler Seite {page_number}: {data['__error']}")
+                    break
+                next_batch, _ = extract_batch(data)
+                if not next_batch:
+                    break
+                all_raw_jobs.extend(next_batch)
+                print(f"  Seite {page_number}: {len(next_batch)} Jobs (gesamt: {len(all_raw_jobs)})")
+                if len(next_batch) < detected_page_size:
+                    break
+                page_number += 1
 
         await browser.close()
+
+    print(f"Rohdaten: {len(all_raw_jobs)} Jobs")
+
+    # Fallback India-Filter auf Python-Seite (falls kein API-Filter gesetzt)
+    if working_filter == {"location": "", "facetFilters": {}}:
+        before = len(all_raw_jobs)
+        all_raw_jobs = [
+            j for j in all_raw_jobs
+            if "India" in str(j.get("country") or j.get("locationCountry") or
+                              j.get("primaryLocation") or j.get("addresses") or "")
+        ]
+        print(f"Python-seitig auf India gefiltert: {before} → {len(all_raw_jobs)}")
 
     print(f"Rohdaten: {len(all_raw_jobs)} Jobs")
 
